@@ -1,0 +1,44 @@
+= CalConnect Standard: Calendaring and scheduling -- Support for Series in iCalendar
+:title: Calendaring and scheduling -- Support for Series in iCalendar
+:fullname: Michael Douglass
+:firstname: Michael
+:surname: Douglass
+:docnumber: 51003
+:copyright-year: 2018
+:language: en
+:doctype: standard
+:edition: 1
+:status: committee-draft
+:revdate: 2018-11-30
+:script: Latn
+:technical-committee: CALENDAR
+:local-cache-only:
+:data-uri-image:
+:toc:
+
+:sectnums!:
+
+include::sections/00-abstract.adoc[]
+include::sections/00-foreword.adoc[]
+include::sections/00-intro.adoc[]
+
+:sectnums:
+
+include::sections/01-scope.adoc[]
+include::sections/02-normrefs.adoc[]
+include::sections/03-terms.adoc[]
+include::sections/04-overrides.adoc[]
+include::sections/05-series.adoc[]
+include::sections/06-redefinedrelationtypevalue.adoc[]
+include::sections/07-newparams.adoc[]
+include::sections/08-newproperties.adoc[]
+include::sections/09-redefinedrelatedto.adoc[]
+include::sections/10-backwards.adoc[]
+include::sections/11-caldav.adoc[]
+include::sections/12-security.adoc[]
+include::sections/13-iana.adoc[]
+include::sections/14-acknowledgements.adoc[]
+include::sections/99-bibliography.adoc[]
+include::sections/a1-open-issues.adoc[]
+include::sections/a2-changelog.adoc[]
+

@@ -1,0 +1,38 @@
+
+[#appendix-a]
+[appendix,obligation=informative]
+== Points for discussion
+
+=== Detecting changes from old clients
+
+If such a client updates
+properties in the master ... what do we say here?  Is there a way
+we can determine that the client doesn't realize that it's a
+series?  If it doesn't then updating the dtstart is a big deal -
+maybe we add a parameter to a dtstart update to indicate the
+client knows it's a series but wants to do so anyway.
+
+Or perhaps we add a new operation - or extend patch.  Simple
+update returns FORBIDDEN if you try to change any of the important
+properties (should do that for recurrences) and requires an
+explicit flag to say you (think you) know what you're doing.
+
+
+=== Splitting and linking
+
+The spec currently only allows for backward
+linking to previous masters.  There is a parameter added to the
+rule SPLIT=YES to indicate that the series was split
+
+It makes sense to have a forward link to the new(er) series.
+However, a client/server may not know what the UID is until after
+data is stored.  The new chain can be determined vis a query so
+perhaps we can leave it up to the protocols to figure out that
+mechanism.
+
+=== CalDAV queries
+
+If there were a better more generalised query
+language such an extensions might be unnecessary.  Should we
+define a query language specifically for calendaring?
+

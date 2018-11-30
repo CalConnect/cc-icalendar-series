@@ -1,0 +1,16 @@
+
+== Backwards compatibility
+
+Any clients following the approach specified in <<RFC5545>> are
+expected to ignore any properties or parameters they don't recognize.
+
+For such clients the series appears to be an unconnected set of
+components.  They all have their own unique UIDS.  If the client
+updates an instance this should be identical in effect to an update
+carried out by a client aware of the new properties.
+
+Updates MUST preserve the SERIES-ID, LAST-SERIES-ID, SRULE, SDATE and
+SXDATE properties.  A client which does not do so is in violation of
+<<RFC5545>>.
+
+TODO: More text needed here...

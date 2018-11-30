@@ -1,0 +1,5 @@
+== Security Considerations
+
+Clients and servers should take care to limit the number of generated
+instances to a reasonable value.  This can be a relatively small
+value.

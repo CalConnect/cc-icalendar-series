@@ -1,0 +1,11 @@
+
+== CalDAV extensions
+
+This specification may extend Caldav by adding reports to return all
+members of a series given the series master UID.  This could be
+handled by the current query mechanism but it is likely to be
+sufficiently frequently used that a special query is appropriate.
+
+It is also likely we will want a CalDAV operation to split a series
+and generate the additional members of the series as a single atomic
+operation.

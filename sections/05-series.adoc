@@ -1,0 +1,95 @@
+
+[[series]]
+== Series
+
+A series is a, generally regularly, repeating sets of events or tasks
+each instance of which is usually, but not always, different in some
+respect.  Examples may be a library running an after-school reading
+program which usually, takes place at the same time each week but
+always differs in the book or author being studied.
+
+In recurrences an instances is a calculated 'virtual' object, unless
+overridden.  It has the same UID as the master and a RECURRENCE-ID
+which is always one of the calculated set.
+
+In a series, a specified number of instances are created ahead of
+time each with their own unique UID.  They are all related to the
+master using a SERIES-MASTER relation type defined in this
+specification.  Each instance acts as an individual component as far
+as retrieval and searching is concerned.
+
+Each instance and master is identified as a member of the full series
+by the SERIES-UID property.  The value of this property is the same
+in all members of the series even when splits have occurred.
+
+As instances are created a LAST-SERIES-ID property is added or
+updated in the master to indicate which instance was last created.
+When there are SXDATE properties this property value may represent an
+instance which cannot be created.  It merely represents the latest
+calculated date.
+
+This property allows generated instances to be deleted without the
+addition of SXDATE properties to the master.  The SXDATE only
+indicates future instances which MUST NOT be created.
+
+As time goes on more instances are created either by the server or by
+a client when it inspects the current state of the series.  The
+number of instances may be based on time or a count.
+
+For example, an organization may allow rooms to be booked only 4
+weeks ahead.  Thus a series may be set up which has that 4 week set
+of events in the future.  Each will have the room as an attendee
+ensuring that at least the room is booked at the regular time.
+
+=== Modifying series patterns and splitting
+
+If it becomes necessary to modify the series rules or the master
+start then the series is always split at the point of the
+modification.
+
+When a series is split the previous master is modifed to truncate the
+current series at the last generated instance and a parameter
+SPLIT=YES is added to the series rule to indicate that this master is
+now split.
+
+The split may result in a number of instances related to the old
+series but overlapping the new.  It is up to the implementation to
+decide what should be done with these but this usually requires a
+degree of interaction with a human (or very intelligent robot).  The
+application may offer to copy them into the corresponding new
+instances - if these can be easily determined, offer to delete all of
+them or let the user manually copy information and delete.
+
+The new series master is related to the old master by the new series
+master having a RELATED-TO property with RELTYPE=SERIES-MASTER
+pointing at the previous master.  In that way a backwards chain of
+series masters may be created
+
+=== The series master
+
+A series master is identified in much the same way as a recurrence
+master.  It will contain an SRULE and 0 or more SDATE properties or 1
+or more SDATE properties.  Additionally it may contain 0 or more
+SXDATE properties to exclude instances.
+
+As noted above, if the series was split it may contain a RELATED-TO
+property with RELTYPE=SERIES-MASTER and a value of the previous
+series master.
+
+The master will also contain a LAST-SERIES-ID if any instances have
+been calculated and perhaps generated.
+
+It is important to note that the series master is the first member of
+the series.  Thus the first instance always occurs AFTER the series
+master.
+
+=== The series instances
+
+A series instance is identified by having a SERIES-ID property which
+is calculated in the same manner as a RECURRENCE-ID.  It MUST also
+contain a RELATED-TO property with RELTYPE=SERIES-MASTER and a value
+being the UID of the series master.
+
+As noted above, if the series was split it may contain a RELATED-TO
+property with RELTYPE=SERIES-MASTER and a value being the UID of the
+previous series master.

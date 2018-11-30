@@ -1,0 +1,54 @@
+
+== Overrides and iCalendar recurrences
+
+The recurrence rules specify how instances are to be computed.  These
+rules provide a set of keys - the RECURRENCE-ID - and an instance can
+be created with the calculated start date/time and a copy of the
+duration (or calculated end date/time).
+
+The specification allows for overrides.  These are handled by
+supplying a complete replacement for the instance with a RECURRENCE-
+ID property matching that of the instance being overridden.  This may
+change any of the properties (except the UID) - including start, end
+or duration.
+
+If a long lived recurrence is heavily overridden it becomes very
+cumbersome.  The master plus overrides is considered a single
+resource in most circumstances (iTip allows the delivery of a single
+instance in certain situations).
+
+Simple meetings can become heavily modified recurrences through adding
+the weeks agenda to the description, changing of attendees etc.
+
+There are approaches being considered to mitigate some of these
+issues which mostly involve only storing changes but recurrences are
+still awkward to deal with.
+
+=== Changing the master start or the recurrence rules
+
+This can lead to some very difficult problems to resolve.  In the
+case of a heavily modified meeting it may be difficult to impossible
+to determine which override applies to the newly modified event.
+
+For example, a weekly book-reading is moved from Monday to Friday.
+There are weeks of scheduled events in the future.  Do we move them
+all forward to the next instance or skip one and move them back?  If
+it becomes bi-weekly rather than weekly do we drop every other or
+just space them out more?
+
+To be sure - some of these problems are not totally resolved by a
+series approach but they become more tractable.
+
+=== Splitting recurrences
+
+The <<RFC5545>> THISANDFUTURE range is poorly supported.  Splitting is
+what a number of implementations use to avoid changing overrides in
+the past.
+
+The recurring event is split into 2, one being the truncated original
+the other being a new recurring event starting at the time of the
+THISANDFUTURE override.
+
+There is left the problem of relating the two, this can be
+accomplished by use of the RELATED-TO property but that is not
+standardized.

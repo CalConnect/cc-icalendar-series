@@ -1,0 +1,102 @@
+
+== New Property Parameters
+
+[[param-split]]
+=== Split
+
+Parameter name:: SPLIT
+
+Purpose:: To indicate a series has been split.
+
+Format Definition::
+--
+This parameter is defined by the following notation:
+
+[source]
+----
+splitparam     = "SPLIT" "="
+              ("YES"      ; The series is split
+              / "NO"      ; The series is not split (default)
+              / x-name        ; Experimental reference type
+              / iana-token)   ; Other IANA registered type
+----
+--
+
+Description:: This parameter MAY be specified on the SRULE property
+  to indicate that the series has been split with SPLIT=YES.  Once
+  split is is probably inappropriate to modify the series further.
+
+[[param-lookahead-count]]
+=== Lookahead count
+
+Parameter name:: LOOKAHEAD-COUNT
+
+Purpose:: To specify the number of series instances that should be
+  generated in advance.
+
+Format Definition::
+--
+This parameter is defined by the following notation:
+
+[source]
+----
+lookahead-countparam      = "LOOKAHEAD-COUNT" "=" 1*DIGIT
+----
+--
+
+Description::
+--
+This parameter MAY be specified on the SRULE property
+to indicate how many series instances should be generated in
+advance.
+
+An implementation is free to apply its own limts but MUST NOT
+generate more than those defined by this parameter and/or the
+LOOKAHEAD-PERIOD parameter.
+
+If both the LOOKAHEAD-PERIOD and LOOKAHEAD-COUNT arameters are
+supplied the result should be limited by both.
+
+For example, if the LOOKAHEAD-PERIOD parameter would cause 8
+instances to be generated but LOOKAHEAD-COUNT specifies 4 then
+only 4 instances will be generated.
+--
+
+[[param-lookahead-period]]
+=== Lookahead period
+
+Parameter name:: LOOKAHEAD-PERIOD
+
+Purpose:: To specify a maximum period for which series instances
+  should be generated in advance.
+
+Format Definition::
+--
+This parameter is defined by the following notation:
+
+[source]
+----
+lookahead-periodparam      = "LOOKAHEAD-PERIOD" "="
+                     DQUOTE dur-value DQUOTE
+----
+--
+
+Description::
+--
+This parameter MAY be specified on the SRULE property
+to indicate how far in advance series instances should be
+generated.
+
+An implementation is free to apply its own limts but MUST NOT
+generate more than those defined by this parameter and/or the
+LOOKAHEAD-COUNT parameter.
+
+If both the LOOKAHEAD-PERIOD and LOOKAHEAD-COUNT arameters are
+supplied the result should be limited by both.
+
+For example, if the LOOKAHEAD-PERIOD parameter would cause 8
+instances to be generated but LOOKAHEAD-COUNT specifies 4 then
+only 4 instances will be generated.
+
+The value is a quoted duration.
+--

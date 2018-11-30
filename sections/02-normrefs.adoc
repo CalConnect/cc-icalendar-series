@@ -1,0 +1,26 @@
+
+[bibliography]
+== Normative references
+
+* [[[RFC3986,IETF RFC 3986]]], _AUTOFILL_
+//Berners-Lee, T., Fielding, R., and L. Masinter, "Uniform Resource Identifier (URI): Generic Syntax", STD 66, RFC 3986, DOI 10.17487/RFC3986, January 2005, <http://www.rfc-editor.org/info/rfc3986>.
+
+* [[[RFC5545,IETF RFC 5545]]], _AUTOFILL_
+// Desruisseaux, B., Ed., "Internet Calendaring and Scheduling Core Object Specification (iCalendar)", RFC 5545, DOI 10.17487/RFC5545, September 2009, <http://www.rfc-editor.org/info/rfc5545>.
+
+* [[[RFC5988,IETF RFC 5988]]], _AUTOFILL_
+//M. Nottingham. _Web Linking_. 2010. https://www.rfc-editor.org/info/rfc5988
+
+* [[[RFC6638,IETF RFC 6638]]], _AUTOFILL_
+//Daboo, C. and B. Desruisseaux, "Scheduling Extensions to CalDAV", RFC 6638, DOI 10.17487/RFC6638, June 2012, <http://www.rfc-editor.org/info/rfc6638>.
+
+* [[[RFC7986,IETF RFC 7986]]], _AUTOFILL_
+//Daboo, C., "New Properties for iCalendar", RFC 7986, DOI 10.17487/RFC7986, October 2016, <http://www.rfc-editor.org/info/rfc7986>.
+
+* [[[I-D.daboo-caldav-attachments,IETF I-D daboo-caldav-attachments]]], _AUTOFILL_
+//Cyrus Daboo, Arnaud Quillaud. _CalDAV Managed Attachments._ 2014. http://www.ietf.org/internet-drafts/draft-daboo-caldav-attachments-03.txt
+
+* [[[W3C.REC-xml-20060816,W3C REC xml-20060816]]], _World Wide Web Consortium Recommendation REC-xml-20060816: Extensible Markup Language (XML) 1.0 (Fourth Edition)_, Bray, T., Paoli, J., Sperberg-McQueen, M., Maler, E., and F. Yergeau, August 2006, <http://www.w3.org/TR/2006/REC-xml-20060816>.
+
+* [[[W3C.WD-xptr-xpointer-20021219,W3C WD xptr-xpointer-20021219]]], Steven DeRose, Ron Daniel, Eve Maler. _XPointer xpointer() Scheme._ 2002. http://www.w3.org/TR/2002/WD-xptr-xpointer-20021219
+Z

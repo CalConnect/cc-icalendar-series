@@ -1,0 +1,50 @@
+[#iana]
+== IANA Considerations
+
+=== iCalendar Property Registrations
+
+The following iCalendar property names have been added to the
+iCalendar Properties Registry defined in <<RFC5545,section=8.3.2>>.
+
+[cols="a,a,a",options=header]
+|===
+| Property | Status  | Reference
+
+| LAST-SERIES-ID | Current | <<prop-last-series-id>>
+| SERIES-ID      | Current | <<prop-series-id>>
+| SERIES-UID     | Current | <<prop-series-uid>>
+| SDATE          | Current | <<prop-series-date>>
+| SRULE          | Current | <<prop-series-rule>>
+| SXDATE         | Current | <<prop-series-exception-date>>
+
+|===
+
+
+=== iCalendar Property Parameter Registrations
+
+The following iCalendar property parameter names have been added to
+the iCalendar Parameters Registry defined in <<RFC5545,section=8.3.3>>.
+
+[cols="a,a,a",options=header]
+|===
+| Parameter | Status  | Reference
+
+| LOOKAHEAD-COUNT  | Current | <<param-lookahead-count>>
+| LOOKAHEAD-PERIOD | Current | <<param-lookahead-period>>
+| SPLIT            | Current | <<param-split>>
+
+|===
+
+
+=== iCalendar RELTYPE Value Registrations
+
+The following iCalendar "RELTYPE" values have been added to the
+iCalendar Relationship Types Registry defined in <<RFC5545,section=8.3.8>>.
+
+[cols="a,a,a",options=header]
+|===
+| Relationship Type | Status  | Reference
+
+| SERIES-ID         | Current | <<series>>
+
+|===

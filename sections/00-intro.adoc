@@ -1,0 +1,14 @@
+
+[#introduction]
+== Introduction
+
+Since iCalendar was first defined there has been only one way to
+express a repeating set of events - the recurrence.  This defined a
+master event, a set of rules for computing the instances and a way of
+overriding certain instances.
+
+This approach works well enough in certain situations but has many
+problems which need to be addressed.
+
+This specification introduces a new approach to repeating patterns of
+entities which avoids some of the problems.
