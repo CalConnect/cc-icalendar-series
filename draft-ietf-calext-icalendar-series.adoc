@@ -20,7 +20,7 @@
 :email_1: mikeadouglass@gmail.com
 :docfile: draft-ietf-calext-icalendar-series.adoc
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc2,txt,html,nits
+:mn-output-extensions: xmlrfc2,txt,html
 :technical-committee: TC Freebusy
 
 :sectnums!:
@@ -50,7 +50,7 @@ include::sections/13-iana.adoc[]
 
 include::sections/14-acknowledgements.adoc[]
 // IETF uses special references
-// include::sections-ietf/98-references.adoc[]
+include::sections-ietf/98-references.adoc[]
 
 //include::sections/xa-open-issues.adoc[]
 //include::sections/xb-change-log.adoc[]
