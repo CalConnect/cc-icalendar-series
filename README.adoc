@@ -8,10 +8,7 @@ image:https://travis-ci.com/CalConnect/csd-icalendar-series.svg?branch=master["B
 
 This document is available in its rendered forms here:
 
-* https://calconnect.github.io/csd-icalendar-series/[CalConnect Standard: Calendaring and scheduling -- Support for Series in iCalendar (HTML)]
-* https://calconnect.github.io/csd-icalendar-series/csd-icalendar-series.pdf[PDF]
-* https://calconnect.github.io/csd-icalendar-series/csd-icalendar-series.xml[Metanorma XML]
-* https://calconnect.github.io/csd-icalendar-series/csd-icalendar-series.rxl[Relaton XML (Bibliographic item)]
+* https://calconnect.github.io/csd-icalendar-series/[CalConnect Standard: Calendaring and scheduling -- Support for Series in iCalendar]
 
 
 == Fetching the document
