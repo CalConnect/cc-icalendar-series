@@ -1,12 +1,12 @@
 = Support for Series in iCalendar
 :doctype: internet-draft
 :name: draft-ietf-calext-icalendar-series-00
-:status: standard
+:status: informational
 :ipr: trust200902
-:submission-type: individual
+:submission-type: independent
 :area: Internet
-:intended-series: full-standard
-:revdate: 2019-10-30T00:00:00Z
+:intended-series: info
+:revdate: 2019-10-30
 :fullname_1: Michael Douglass
 :lastname_1: Douglass
 :forename_initials_1: M.

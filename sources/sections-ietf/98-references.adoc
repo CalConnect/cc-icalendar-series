@@ -2,14 +2,20 @@
 [bibliography]
 == Normative References
 
-++++
-include::../references/normative/*[]
-++++
+* [[[RFC2119,RFC 2119]]]
+* [[[RFC2518,RFC 2518]]]
+* [[[RFC3986,RFC 3986]]]
+* [[[RFC4791,RFC 4791]]]
+* [[[RFC5545,RFC 5545]]]
+* [[[RFC5546,RFC 5546]]]
+* [[[RFC6047,RFC 6047]]]
+* [[[RFC6638,RFC 6638]]]
+* [[[RFC7986,RFC 7986]]]
+* [[[RFC8174,RFC 8174]]]
 
 [bibliography]
 == Informative References
 
-++++
-include::../references/informative/*.xml[]
-++++
-
+* [[[RFC3552,RFC 3552]]]
+* [[[RFC4918,RFC 4918]]]
+* [[[RFC5378,RFC 5378]]]
