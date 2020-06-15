@@ -3,7 +3,7 @@
 :name: draft-ietf-calext-icalendar-series-00
 :status: standard
 :ipr: trust200902
-:submissionType: individual
+:submission-type: individual
 :area: Internet
 :intended-series: full-standard
 :revdate: 2019-10-30T00:00:00Z
@@ -20,17 +20,13 @@
 :email_1: mikeadouglass@gmail.com
 :docfile: draft-ietf-calext-icalendar-series.adoc
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc2,txt,html
+:mn-output-extensions: rfc,txt,html,rxl,xml
 :technical-committee: TC Freebusy
-
-:sectnums!:
 
 include::sections/00-abstract.adoc[]
 // CSD Foreword is not used in IETF
 //include::sections/00-foreword.adoc[]
 include::sections/00-intro.adoc[]
-
-:sectnums:
 
 // CSD: these sections are not used in IETF
 //include::sections/01-scope.adoc[]
