@@ -1,0 +1,43 @@
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">Support for Series in iCalendar</title>
+
+
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Internet Engineering Task Force</name>
+<abbreviation>IETF</abbreviation>
+</organization>
+</contributor>
+<version>
+<revision-date>2019-10-30</revision-date>
+</version>
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>informational</stage>
+</status>
+<copyright>
+<from>2020</from>
+<owner>
+<organization>
+<name>Internet Engineering Task Force</name>
+<abbreviation>IETF</abbreviation>
+</organization>
+</owner>
+</copyright>
+<series type="stream">
+<title>independent</title>
+</series>
+<series type="intended">
+<title>info</title>
+</series>
+<ext>
+<doctype>internet-draft</doctype>
+<area>Internet</area>
+<ipr>trust200902</ipr>
+<pi>
+<toc>yes</toc>
+</pi>
+</ext>
+</bibdata>
