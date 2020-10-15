@@ -1,26 +1,27 @@
 = Support for Series in iCalendar
 :doctype: internet-draft
-:name: draft-ietf-calext-icalendar-series-00
+:name: draft-ietf-calext-icalendar-series-01
+:abbrev: iCalendar series
 :status: standard
 :ipr: trust200902
 :submissionType: individual
 :area: Internet
 :intended-series: full-standard
-:revdate: 2019-10-30T00:00:00Z
-:fullname_1: Michael Douglass
-:lastname_1: Douglass
-:forename_initials_1: M.
-:organization_1: Spherical Cow Group
-:street_1: 226 3rd Street
-:city_1: Troy
-:state_1: NY
-:code_1: 12180
-:country_1: United States of America
-:uri_1: https://sphericalcowgroup.com/
-:email_1: mikeadouglass@gmail.com
+:revdate: 2020-10-15T00:00:00Z
+:fullname: Michael Douglass
+:lastname: Douglass
+:forename_initials: M.
+:organization: Spherical Cow Group
+:street: 226 3rd Street
+:city: Troy
+:state: NY
+:code: 12180
+:country: United States of America
+:uri: https://sphericalcowgroup.com/
+:email: mikeadouglass@gmail.com
 :docfile: draft-ietf-calext-icalendar-series.adoc
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc2,txt,html,nits
+:mn-output-extensions: xml,txt,html
 :technical-committee: TC Freebusy
 
 :sectnums!:
@@ -48,9 +49,9 @@ include::sections/11-caldav.adoc[]
 include::sections/12-security.adoc[]
 include::sections/13-iana.adoc[]
 
-include::sections/14-acknowledgements.adoc[]
 // IETF uses special references
-// include::sections-ietf/98-references.adoc[]
+include::sections-ietf/50-acknowledgements.adoc[]
+include::sections-ietf/98-references.adoc[]
 
 //include::sections/xa-open-issues.adoc[]
 //include::sections/xb-change-log.adoc[]
