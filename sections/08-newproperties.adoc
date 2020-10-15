@@ -515,5 +515,5 @@ sruleparam = *(
 
 [example]
 --
-TODO: Say they are pretty much the same as RRULE but extra params
+TODO - Say they are pretty much the same as RRULE but extra params
 --
