@@ -6,7 +6,7 @@ rules provide a set of keys - the RECURRENCE-ID - and an instance can
 be created with the calculated start date/time and a copy of the
 duration (or calculated end date/time).
 
-The specification allows for overrides.  These are handled by
+The <<RFC5545>> specification allows for overrides.  These are handled by
 supplying a complete replacement for the instance with a RECURRENCE-
 ID property matching that of the instance being overridden.  This may
 change any of the properties (except the UID) - including start, end
@@ -21,8 +21,8 @@ Simple meetings can become heavily modified recurrences through adding
 the weeks agenda to the description, changing of attendees etc.
 
 There are approaches being considered to mitigate some of these
-issues which mostly involve only storing changes but recurrences are
-still awkward to deal with.
+issues which mostly involve only storing changes. This can help if the
+changes are minor but heavily modified instances are still a problem.
 
 === Changing the master start or the recurrence rules
 
@@ -36,13 +36,13 @@ all forward to the next instance or skip one and move them back?  If
 it becomes bi-weekly rather than weekly do we drop every other or
 just space them out more?
 
-To be sure - some of these problems are not totally resolved by a
-series approach but they become more tractable.
+While these problems are not totally resolved by a
+series approach, they become more tractable.
 
 === Splitting recurrences
 
 The <<RFC5545>> THISANDFUTURE range is poorly supported.  Splitting is
-what a number of implementations use to avoid changing overrides in
+the approach a number of implementations use to avoid changing overrides in
 the past.
 
 The recurring event is split into 2, one being the truncated original

@@ -2,14 +2,5 @@
 [bibliography]
 == Normative References
 
-++++
-include::../references/normative/*[]
-++++
-
-[bibliography]
-== Informative References
-
-++++
-include::../references/informative/*.xml[]
-++++
-
+* [[[RFC5545,RFC 5545]]]
+* [[[RFC7986,RFC 7986]]]
