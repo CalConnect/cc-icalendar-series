@@ -23,4 +23,3 @@
 * [[[W3C.REC-xml-20060816,W3C REC xml-20060816]]], _World Wide Web Consortium Recommendation REC-xml-20060816: Extensible Markup Language (XML) 1.0 (Fourth Edition)_, Bray, T., Paoli, J., Sperberg-McQueen, M., Maler, E., and F. Yergeau, August 2006, <http://www.w3.org/TR/2006/REC-xml-20060816>.
 
 * [[[W3C.WD-xptr-xpointer-20021219,W3C WD xptr-xpointer-20021219]]], Steven DeRose, Ron Daniel, Eve Maler. _XPointer xpointer() Scheme._ 2002. http://www.w3.org/TR/2002/WD-xptr-xpointer-20021219
-Z

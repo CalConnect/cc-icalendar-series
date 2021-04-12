@@ -13,10 +13,6 @@
 :published-date: 2018-11-30
 :script: Latn
 :technical-committee: CALENDAR
-:draft:
-:toc:
-:stem:
-:xrefstyle: short
 :imagesdir: images
 :docfile: cc-51003.adoc
 :mn-document-class: csd

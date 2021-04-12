@@ -1,6 +1,0 @@
-
-[bibliography]
-== Normative References
-
-* [[[RFC5545,RFC 5545]]]
-* [[[RFC7986,RFC 7986]]]
