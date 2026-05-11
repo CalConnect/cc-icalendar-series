@@ -1,0 +1,1946 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
+  <!--
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Source Sans Pro", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Source Code Pro", monospace !important;
+  font-variant-ligatures: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+.h2Annex {
+  font-family: "Source Sans Pro", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+  dl dt p, dl dd p {
+    margin-top: 0; }
+  dl dt {
+    grid-column-start: 1; }
+  dl dd {
+    grid-column-start: 2; }
+
+b, strong {
+  font-weight: bold; }
+
+div.document-stage-band, div.document-type-band {
+  background-color: #333333; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #1d1d1d;
+  background-color: #fff; }
+  body main {
+    margin: 0 3em 0 6em; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 360px; } }
+
+@media print {
+  .container {
+    padding-left: 0; } }
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    background-color: #f7f7f7; } }
+
+@media print {
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; } }
+
+nav #toc {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
+  @media screen and (max-width: 768px) {
+    nav #toc {
+      padding: 0 1.5em;
+      overflow: visible; } }
+@media screen and (min-width: 768px) {
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+    #toggle span {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); } }
+
+@media screen and (max-width: 768px) {
+  #toggle {
+    display: none; } }
+
+@media print {
+  #toggle {
+    display: none; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #toc ul li a {
+    padding: 5px 10px; }
+  #toc ul a {
+    color: #485094;
+    text-decoration: none;
+    display: block; }
+    #toc ul a:hover {
+      box-shadow: none;
+      color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active, #toc li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+  #toc .toc-active a, #toc li:hover a {
+    color: white; }
+
+@media print {
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc .toc-active a {
+    color: #485094; }
+  #toc li:hover a {
+    color: black; } }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+  #toc li:before {
+    content: " " !important;
+    display: none; }
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .rule.toc {
+      display: none; } }
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+  .document-stage-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 300;
+    height: 160px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-stage-band {
+      display: none; } }
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 102; }
+  .document-type-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-type-band {
+      display: none; } }
+  .document-type-band .document-type {
+    top: 20px; }
+
+/* Typograpy */
+h1, h2, h3, h4, h5, h6 {
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+  h1#content {
+    margin-top: 2em; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+  h2 p {
+    display: inline; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Terms */
+.TermNum, .Terms, .AltTerms {
+  color: #485094;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/* Links, selection */
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d; }
+
+::selection,
+::-moz-selection {
+  background: #1d1d1d;
+  color: white; }
+
+/* Lists */
+ol {
+  margin-left: 1.2em; }
+
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
+
+ul > li:before {
+  content: "\2014";
+  position: absolute;
+  left: 0; }
+
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
+
+/* Bibliograhy */
+p.Biblio, p.NormRef {
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
+
+/* Blocks */
+.figure {
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto;
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none; }
+  .figure .FigureTitle, .figure .figure-title {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .figure > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.SourceTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+pre {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow-y: auto;
+  overflow-x: scroll; }
+  .example pre {
+    background: none; }
+
+.pseudocode {
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+  .pseudocode .SourceTitle {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .example .pseudocode {
+    background: none; }
+
+.Admonition .AdmonitionTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.recommend .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.require .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.permission .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.Note, .Admonition {
+  color: #47430c;
+  padding: 0.25em;
+  margin: 0; }
+
+.Note {
+  background-color: #fff495; }
+  .Note p {
+    margin: 1em; }
+
+.blockquote, .Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+  .blockquote .QuoteAttribution, .Quote .QuoteAttribution {
+    text-align: right; }
+
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/* Examples */
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: -1.5em; }
+
+.example pre, .example .pseudocode {
+  background: none; }
+
+/* Tables */
+table {
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+  table, table th, table td {
+    border: 1px solid black;
+    font-size: 0.95em; }
+  table th, table td {
+    padding: 1em; }
+  table td.header {
+    font-weigth: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/* Footnotes */
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/* Contact Info */
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 1em;
+  margin-top: 2em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+  .contact-info p, .contact-info a {
+    font-family: "Source Code Pro", monospace;
+    font-variant-ligatures: none;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 1em;
+    margin: 0; }
+  .contact-info a:hover {
+    color: #485094;
+    background: none;
+    text-decoration: underline;
+    box-shadow: none; }
+  .contact-info .name {
+    font-weight: 700; }
+
+/* Keywords */
+span.keyword {
+  font-weight: 600; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+  .Admonition p, .admonition p {
+    margin: 0; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.wrapper-top {
+  background-color: #0e1a85;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.coverpage-maturity {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+  .coverpage-contributors .role {
+    font-variant-caps: all-small-caps;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 0.1em 0.5em;
+    margin-left: 1em;
+    color: #485094;
+    font-size: 0.9em;
+    font-weight: 900; }
+  .coverpage-contributors .person {
+    display: block;
+    font-weight: 300; }
+
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+  .coverpage-warning .title {
+    color: #f36f36;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+
+.copyright {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: left; }
+  .copyright .name, .copyright .address {
+    color: #485094; }
+
+#myBtn {
+  font-family: "Source Code Pro", monospace;
+  font-variant-ligatures: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+  #myBtn:hover {
+    opacity: 1; }
+  @media print {
+    #myBtn {
+      display: none; } }
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .title-section1 {
+    page-break-before: always; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><title>Calendaring and scheduling&#x2009;&#x2014;&#x2009;Support for Series in iCalendar</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { return "h1:not(:empty):not(.TermNum):not(.noTOC),h2:not(:empty):not(.TermNum):not(.noTOC)";}
+</script>
+
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="committee-draft-band">
+  <p class="document-stage">Committee Draft</p>
+</div>
+
+<div class="document-type-band" id="standard-band">
+  <p class="document-type">CalConnect Standard</p>
+</div>
+
+<div id="toggle"> <span>&#x2022;</span> </div>
+
+<header>
+
+  <!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/CD 51003:2018</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2018</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Calendaring and scheduling&#x2009;&#x2014;&#x2009;Support for Series in iCalendar</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC CALENDAR</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+        <div class="group author">
+          
+          
+          <span class="person author">Michael Douglass<span class="role">Author</span></span>
+          
+          <div class="affiliation"></div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="standard">CalConnect Standard</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="committee-draft">Committee Draft</span>
+      </div>
+
+      
+      <div class="coverpage-warning">
+          <div class="boilerplate-license">
+    <div><h1 class="IntroTitle">Warning for Drafts</h1>
+
+      <p id="_bf6db75e-c41f-4528-87d2-f48dfb083c5b">This document is not a CalConnect Standard. It is distributed for review and
+        comment, and is subject to change without notice and may not be referred to as
+        a Standard. Recipients of this draft are invited to submit, with their
+        comments, notification of any relevant patent rights of which they are aware
+        and to provide supporting documentation.
+      </p>
+    </div>
+  </div>
+      </div>
+      
+
+      <div class="copyright">
+        <div class="year">
+          <div class="boilerplate-copyright">
+    <div>
+      <p id="_51738650-d18c-46b2-a063-ad0628c5cc55">&#xA9; 2018 The Calendaring and Scheduling Consortium, Inc. </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="message">
+          <div class="boilerplate-legal">
+    <div>
+      <p id="_97ac0333-3a90-44bc-adf3-e33894fbb44d">All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.  </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="boilerplate-feedback">
+    <div>
+      <p id="boilerplate-name">The Calendaring and Scheduling Consortium, Inc.</p>
+      <p id="boilerplate-address">4390 Chaffin Lane<br />
+        McKinleyville<br />
+        California 95519<br />
+        United States of America<br />
+        <br />
+        <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+        <a href="www.calconnect.org">www.calconnect.org</a>
+      </p>
+    </div>
+  </div>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+    </div>
+  </div>
+</header>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"><ul><li class="h1"><a href="#toc0">      Foreword</a></li><li class="h1"><a href="#toc1">      Introduction</a></li><li class="h1"><a href="#toc2">      Acknowledgements</a></li><li class="h1"><a href="#toc3">      1.&#xA0; Scope</a></li><li class="h1"><a href="#toc4">      2.&#xA0; Normative references</a></li><li class="h1"><a href="#toc5">      3.&#xA0; Terms and definitions</a></li><li class="h1"><a href="#toc6">      4.&#xA0; Overrides and iCalendar recurrences</a></li><li class="h2"><a href="#toc7">      4.1.&#xA0; Changing the master start or the recurrence rules</a></li><li class="h2"><a href="#toc8">      4.2.&#xA0; Splitting recurrences</a></li><li class="h1"><a href="#toc9">      5.&#xA0; Series</a></li><li class="h2"><a href="#toc10">      5.1.&#xA0; Modifying series patterns and splitting</a></li><li class="h2"><a href="#toc11">      5.2.&#xA0; The series master</a></li><li class="h2"><a href="#toc12">      5.3.&#xA0; The series instances</a></li><li class="h1"><a href="#toc13">      6.&#xA0; Redefined Relation Type Value</a></li><li class="h1"><a href="#toc14">      7.&#xA0; New Property Parameters</a></li><li class="h2"><a href="#toc15">      7.1.&#xA0; Split</a></li><li class="h2"><a href="#toc16">      7.2.&#xA0; Lookahead count</a></li><li class="h2"><a href="#toc17">      7.3.&#xA0; Lookahead period</a></li><li class="h1"><a href="#toc18">      8.&#xA0; New Properties</a></li><li class="h2"><a href="#toc19">      8.1.&#xA0; General</a></li><li class="h2"><a href="#toc20">      8.2.&#xA0; Generating Series members</a></li><li class="h2"><a href="#toc21">      8.3.&#xA0; Series UID</a></li><li class="h2"><a href="#toc22">      8.4.&#xA0; Series-exception-date</a></li><li class="h2"><a href="#toc23">      8.5.&#xA0; Series-date</a></li><li class="h2"><a href="#toc24">      8.6.&#xA0; Series-id</a></li><li class="h2"><a href="#toc25">      8.7.&#xA0; Last series ID</a></li><li class="h2"><a href="#toc26">      8.8.&#xA0; Series Rule</a></li><li class="h1"><a href="#toc27">      9.&#xA0; Redefined RELATED-TO Property</a></li><li class="h2"><a href="#toc28">      9.1.&#xA0; RELATED-TO</a></li><li class="h1"><a href="#toc29">      10.&#xA0; Backwards compatibility</a></li><li class="h1"><a href="#toc30">      11.&#xA0; CalDAV extensions</a></li><li class="h1"><a href="#toc31">      12.&#xA0; IANA Considerations</a></li><li class="h2"><a href="#toc32">      12.1.&#xA0; iCalendar Property Registrations</a></li><li class="h2"><a href="#toc33">      12.2.&#xA0; iCalendar Property Parameter Registrations</a></li><li class="h2"><a href="#toc34">      12.3.&#xA0; iCalendar RELTYPE Value Registrations</a></li><li class="h1"><a href="#toc35">      Appendix A (informative)  Points for discussion</a></li><li class="h2"><a href="#toc36">      A.1.&#xA0; Detecting changes from old clients</a></li><li class="h2"><a href="#toc37">      A.2.&#xA0; Splitting and linking</a></li><li class="h2"><a href="#toc38">      A.3.&#xA0; CalDAV queries</a></li><li class="h1"><a href="#toc39">      Appendix B (informative)  Change log</a></li><li class="h1"><a href="#toc40">      Bibliography</a></li></ul></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="authority">
+  
+
+
+  
+
+
+  
+
+  
+</div>
+      <br />
+      <div id="_f9724417-74ba-4b7b-bab3-0199650a2990">
+        <h1 class="ForewordTitle" id="toc0">Foreword</h1>
+        <p id="_7d6fc6b4-e3bc-4aef-b38a-dc1a3e1b0ba9">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global
+non-profit organization with the aim to facilitate interoperability of
+collaborative technologies and tools through open standards.</p>
+        <p id="_2977b89b-3bcd-40b5-bd13-21efb94aed3d">CalConnect works closely with international and regional partners,
+of which the full list is available on our website
+(<a href="https://www.calconnect.org/about/liaisons-and-relationships">https://www.calconnect.org/about/liaisons-and-relationships</a>).</p>
+        <p id="_89df92cd-0d24-442b-9404-1f42595304e2">The procedures used to develop this document and those intended for its
+further maintenance are described in the CalConnect Directives.</p>
+        <p id="_fce62ce0-3ca4-41fd-b3ab-eb1d8466b446">In particular the different approval criteria needed for the different
+types of CalConnect documents should be noted. This document was drafted in
+accordance with the editorial rules of the CalConnect Directives.</p>
+        <p id="_5a479d91-c8ff-42c6-a704-54b3cada1938">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be
+held responsible for identifying any or all such patent rights. Details
+of any patent rights identified during the development of the document
+will be provided in the Introduction.</p>
+        <p id="_17a119d0-a698-4f28-bb87-0caf812ed53a">Any trade name used in this document is information given for the
+convenience of users and does not constitute an endorsement.</p>
+        <p id="_244ee79e-ab30-4572-88fc-c579232945e4">This document was prepared by Technical Committee
+<i>CALENDAR</i>.</p>
+      </div>
+      <br />
+      <div class="Section3" id="introduction">
+        <h1 class="IntroTitle" id="toc1">Introduction</h1>
+        <p id="_e80f7afa-7f90-4f63-a3d4-67a25d2c9e07">Since iCalendar was first defined there has been only one way to
+express a repeating set of events&#x2009;&#x2014;&#x2009;the recurrence.  This defined a
+master event, a set of rules for computing the instances and a way of
+overriding certain instances.</p>
+        <p id="_4f5f2bf8-631f-49e5-bba9-a9f45f148de8">This approach works well enough in certain situations but has many
+problems which need to be addressed.</p>
+        <p id="_abc91deb-cfea-4334-91b7-287402ea89d0">This specification introduces a new approach to repeating patterns of
+entities which avoids some of the problems.</p>
+      </div>
+      <br />
+      <div class="Section3" id="acknowledgements">
+        <h1 class="IntroTitle" id="toc2">Acknowledgements</h1>
+        <p id="_cd00cdd7-ef7f-4f38-b176-85240cda4b8d">The author would like to thank the members of the Calendaring and
+Scheduling Consortium technical committees and the following
+individuals for contributing their ideas, support and comments:</p>
+        <p id="_627b3b4b-b174-49d4-8741-25b39d817a0d">The author would also like to thank the Calendaring and Scheduling
+Consortium for advice with this specification.</p>
+      </div>
+      <p class="zzSTDTitle1">Calendaring and scheduling&#x2009;&#x2014;&#x2009;Support for Series in iCalendar</p>
+      <div id="scope">
+        <h1 id="toc3">1.&#xA0; Scope</h1>
+        <p id="_5759bb77-b835-4cc9-94c8-547b2fd88ae8">This document updates <a href="#RFC5545">RFC 5545</a> by defining a new repeating set
+of events known as a series.  This differs from recurrences in that
+each instance is a separate entity with a parent relationship to a
+specified template entity.</p>
+      </div>
+      <div><h1 id="toc4">2.&#xA0; Normative references</h1><p id="_46dd1611-3d4b-40d3-be9c-1b2d52909b2c">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p> <p id="RFC3986" class="NormRef">IETF RFC 3986, <i>Uniform Resource Identifier (URI): Generic Syntax</i></p> <p id="RFC5545" class="NormRef">IETF RFC 5545, <i>Internet Calendaring and Scheduling Core Object Specification (iCalendar)</i></p> <p id="RFC5988" class="NormRef">IETF RFC 5988, <i>Web Linking</i></p> <p id="RFC6638" class="NormRef">IETF RFC 6638, <i>Scheduling Extensions to CalDAV</i></p> <p id="RFC7986" class="NormRef">IETF RFC 7986, <i>New Properties for iCalendar</i></p> <p id="I-D.daboo-caldav-attachments" class="NormRef">IETF I-D.daboo-caldav-attachments, <i>CalDAV Managed Attachments</i></p><p id="W3C.REC-xml-20060816" class="NormRef">W3C REC xml-20060816, <i>World Wide Web Consortium Recommendation REC-xml-20060816: Extensible Markup Language (XML) 1.0 (Fourth Edition)</i>, Bray, T., Paoli, J., Sperberg-McQueen, M., Maler, E., and F. Yergeau, August 2006, <a href="http://www.w3.org/TR/2006/REC-xml-20060816">http://www.w3.org/TR/2006/REC-xml-20060816</a>.</p><p id="W3C.WD-xptr-xpointer-20021219" class="NormRef">W3C WD xptr-xpointer-20021219, Steven DeRose, Ron Daniel, Eve Maler. <i>XPointer xpointer() Scheme.</i> 2002. <a href="http://www.w3.org/TR/2002/WD-xptr-xpointer-20021219">http://www.w3.org/TR/2002/WD-xptr-xpointer-20021219</a>Z</p></div>
+      <div id="terms">
+        <h1 id="toc5">3.&#xA0; Terms and definitions</h1>
+        <p id="_94e597dc-42bf-4fde-9bfd-af8c3c29e621">No terms and definitions are listed in this document.</p>
+      </div>
+      <div id="_overrides_and_icalendar_recurrences">
+        <h1 id="toc6">4.&#xA0; Overrides and iCalendar recurrences</h1>
+        <p id="_4cf1f39d-7b39-4b59-8182-a0cd91f7005f">The recurrence rules specify how instances are to be computed.  These
+rules provide a set of keys&#x2009;&#x2014;&#x2009;the RECURRENCE-ID&#x2009;&#x2014;&#x2009;and an instance can
+be created with the calculated start date/time and a copy of the
+duration (or calculated end date/time).</p>
+        <p id="_cc100197-c26b-4e38-8534-de32893c910e">The specification allows for overrides.  These are handled by
+supplying a complete replacement for the instance with a RECURRENCE-
+ID property matching that of the instance being overridden.  This may
+change any of the properties (except the UID)&#x2009;&#x2014;&#x2009;including start, end
+or duration.</p>
+        <p id="_be220022-8536-46cc-985f-4be393c101f8">If a long lived recurrence is heavily overridden it becomes very
+cumbersome.  The master plus overrides is considered a single
+resource in most circumstances (iTip allows the delivery of a single
+instance in certain situations).</p>
+        <p id="_a6711cdc-b1f9-40be-8e9a-7159d6e5584b">Simple meetings can become heavily modified recurrences through adding
+the weeks agenda to the description, changing of attendees etc.</p>
+        <p id="_7515a095-f58b-438e-b387-402fd947d22f">There are approaches being considered to mitigate some of these
+issues which mostly involve only storing changes but recurrences are
+still awkward to deal with.</p>
+        <div id="_changing_the_master_start_or_the_recurrence_rules"><h2 id="toc7">4.1.&#xA0; Changing the master start or the recurrence rules</h2><p id="_0825a1af-d685-4b07-99a6-d882f202a6bd">This can lead to some very difficult problems to resolve.  In the
+case of a heavily modified meeting it may be difficult to impossible
+to determine which override applies to the newly modified event.</p>
+<p id="_bf206214-0ba4-488d-b9eb-dac86e3922d1">For example, a weekly book-reading is moved from Monday to Friday.
+There are weeks of scheduled events in the future.  Do we move them
+all forward to the next instance or skip one and move them back?  If
+it becomes bi-weekly rather than weekly do we drop every other or
+just space them out more?</p>
+<p id="_0ce5e01c-c572-42a3-9ba0-d8b54b7091aa">To be sure&#x2009;&#x2014;&#x2009;some of these problems are not totally resolved by a
+series approach but they become more tractable.</p></div>
+        <div id="_splitting_recurrences"><h2 id="toc8">4.2.&#xA0; Splitting recurrences</h2><p id="_bad45e74-fc5f-4852-9abb-f7d7addb4136">The <a href="#RFC5545">RFC 5545</a> THISANDFUTURE range is poorly supported.  Splitting is
+what a number of implementations use to avoid changing overrides in
+the past.</p>
+<p id="_124d7c56-e078-47a6-b46d-661cdc3f20f1">The recurring event is split into 2, one being the truncated original
+the other being a new recurring event starting at the time of the
+THISANDFUTURE override.</p>
+<p id="_2a7aca0b-be6a-4cf2-8ff4-7a29db22de93">There is left the problem of relating the two, this can be
+accomplished by use of the RELATED-TO property but that is not
+standardized.</p></div>
+      </div>
+      <div id="series">
+        <h1 id="toc9">5.&#xA0; Series</h1>
+        <p id="_e8996600-3ad4-4db4-8159-cbe87dd950eb">A series is a, generally regularly, repeating sets of events or tasks
+each instance of which is usually, but not always, different in some
+respect.  Examples may be a library running an after-school reading
+program which usually, takes place at the same time each week but
+always differs in the book or author being studied.</p>
+        <p id="_8fd03099-dccf-4f43-bf27-975108abc0ad">In recurrences an instances is a calculated &#x2018;virtual&#x2019; object, unless
+overridden.  It has the same UID as the master and a RECURRENCE-ID
+which is always one of the calculated set.</p>
+        <p id="_065cbd7d-168f-43d7-9b4c-0bfd93e7bc8b">In a series, a specified number of instances are created ahead of
+time each with their own unique UID.  They are all related to the
+master using a SERIES-MASTER relation type defined in this
+specification.  Each instance acts as an individual component as far
+as retrieval and searching is concerned.</p>
+        <p id="_0f159672-e671-42ae-82d3-2363a55e5930">Each instance and master is identified as a member of the full series
+by the SERIES-UID property.  The value of this property is the same
+in all members of the series even when splits have occurred.</p>
+        <p id="_3384590a-3828-4ffc-bc7f-2283f57b0de2">As instances are created a LAST-SERIES-ID property is added or
+updated in the master to indicate which instance was last created.
+When there are SXDATE properties this property value may represent an
+instance which cannot be created.  It merely represents the latest
+calculated date.</p>
+        <p id="_2a2b3128-361a-42c3-ae30-47f2e84560d7">This property allows generated instances to be deleted without the
+addition of SXDATE properties to the master.  The SXDATE only
+indicates future instances which MUST NOT be created.</p>
+        <p id="_00c8cccd-0216-4bbc-b38d-3a0c3748183a">As time goes on more instances are created either by the server or by
+a client when it inspects the current state of the series.  The
+number of instances may be based on time or a count.</p>
+        <p id="_8a7e71a4-a097-4d82-8973-6a9c91da16da">For example, an organization may allow rooms to be booked only 4
+weeks ahead.  Thus a series may be set up which has that 4 week set
+of events in the future.  Each will have the room as an attendee
+ensuring that at least the room is booked at the regular time.</p>
+        <div id="_modifying_series_patterns_and_splitting"><h2 id="toc10">5.1.&#xA0; Modifying series patterns and splitting</h2><p id="_c177b4ba-bd8c-42cb-b575-2b4b9fa7a5ab">If it becomes necessary to modify the series rules or the master
+start then the series is always split at the point of the
+modification.</p>
+<p id="_d97f7802-c13d-40e1-8103-397af9cea0da">When a series is split the previous master is modifed to truncate the
+current series at the last generated instance and a parameter
+SPLIT=YES is added to the series rule to indicate that this master is
+now split.</p>
+<p id="_e9700aca-c14f-401d-991d-110c32298009">The split may result in a number of instances related to the old
+series but overlapping the new.  It is up to the implementation to
+decide what should be done with these but this usually requires a
+degree of interaction with a human (or very intelligent robot).  The
+application may offer to copy them into the corresponding new
+instances&#x2009;&#x2014;&#x2009;if these can be easily determined, offer to delete all of
+them or let the user manually copy information and delete.</p>
+<p id="_6fdf9b21-985e-4d6d-a890-02cc6670ae88">The new series master is related to the old master by the new series
+master having a RELATED-TO property with RELTYPE=SERIES-MASTER
+pointing at the previous master.  In that way a backwards chain of
+series masters may be created</p></div>
+        <div id="_the_series_master"><h2 id="toc11">5.2.&#xA0; The series master</h2><p id="_d2460179-18c6-40fe-b545-56672c730b61">A series master is identified in much the same way as a recurrence
+master.  It will contain an SRULE and 0 or more SDATE properties or 1
+or more SDATE properties.  Additionally it may contain 0 or more
+SXDATE properties to exclude instances.</p>
+<p id="_eef6af3b-a3d7-4646-a054-3a69c0c59f66">As noted above, if the series was split it may contain a RELATED-TO
+property with RELTYPE=SERIES-MASTER and a value of the previous
+series master.</p>
+<p id="_05690aa7-8302-49ca-aedd-e73fe5260e8f">The master will also contain a LAST-SERIES-ID if any instances have
+been calculated and perhaps generated.</p>
+<p id="_40594181-1251-4e9b-9f76-2acbdfb26aef">It is important to note that the series master is the first member of
+the series.  Thus the first instance always occurs AFTER the series
+master.</p></div>
+        <div id="_the_series_instances"><h2 id="toc12">5.3.&#xA0; The series instances</h2><p id="_6cf756df-086d-40e7-85be-4832b49fa806">A series instance is identified by having a SERIES-ID property which
+is calculated in the same manner as a RECURRENCE-ID.  It MUST also
+contain a RELATED-TO property with RELTYPE=SERIES-MASTER and a value
+being the UID of the series master.</p>
+<p id="_218549b1-abb0-4e1f-8841-501ee629d31c">As noted above, if the series was split it may contain a RELATED-TO
+property with RELTYPE=SERIES-MASTER and a value being the UID of the
+previous series master.</p></div>
+      </div>
+      <div id="redefined_relation_type_value">
+        <h1 id="toc13">6.&#xA0; Redefined Relation Type Value</h1>
+        <p id="_6b8cdfe9-e17b-4d07-8c04-d916293806ed">Relationship parameter type values are defined in
+<a href="#RFC5545">RFC 5545, Section 3.2.15</a>.  This specification augments that parameter to include the
+new relationship values SERIES-MASTER.</p>
+        <dl id="_fb976caf-4285-4af3-8c09-68ecff36cb3e">
+          <dt>
+            <p>Format Definition</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_c3a631a8-3a82-4e1a-94fe-36c6f916f35a">This property parameter is respecified as follows:</p>
+        <pre id="_558fd31e-e726-4a08-9bb4-4fd1429fd08a" class="prettyprint ">reltypeparam = "RELTYPE" "="<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ("PARENT"&#xA0;&#xA0;&#xA0; ; Parent relationship - Default<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "CHILD"&#xA0;&#xA0;&#xA0;&#xA0; ; Child relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "SIBLING"&#xA0;&#xA0; ; Sibling relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "DEPENDS-ON" ; refers to previous task<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "REFID"&#xA0;&#xA0;&#xA0;&#xA0; ; Relationship based on REFID<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "STRUCTURED-CATEGORY"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; Relationship based on STRUCTURED-CATEGORY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "FINISHTOSTART" ;&#xA0; Temporal relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "FINISHTOFINISH" ;&#xA0; Temporal relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "STARTTOFINISH" ;&#xA0; Temporal relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "STARTTOSTART" ;&#xA0; Temporal relationship<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "SERIES-MASTER" ;&#xA0; link to the master component<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / iana-token&#xA0; ; Some other IANA-registered<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; iCalendar relationship type<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / x-name)&#xA0;&#xA0;&#xA0;&#xA0; ; A non-standard, experimental<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; relationship type</pre>
+        <p class="SourceTitle" style="text-align:center;">Figure 1</p>
+        <dl id="_05f1154b-4406-45bf-8587-36764527f7b0">
+          <dt>
+            <p>Description</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_1b7944fa-48f6-4b40-8a76-814a3625791f">This parameter can be specified on a property that
+references another related calendar component.  The parameter may
+specify the hierarchical relationship type of the calendar
+component referenced by the property when the value is PARENT,
+CHILD or SIBLING.  If this parameter is not specified on an
+allowable property, the default relationship type is PARENT.
+Applications MUST treat x-name and iana-token values they don&#x2019;t
+recognize the same way as they would the PARENT value.</p>
+        <p id="_d97547ec-72db-4e93-9cf6-a57c6a5bef5b">This parameter defines the temporal relationship when the value is
+one of the project management standard relationships
+FINISHTOSTART, FINISHTOFINISH, STARTTOFINISH or STARTTOSTART.
+This property will be present in the predecessor entity and will
+refer to the successor entity.  The GAP parameter specifies the
+lead or lag time between the predecessor and the successor.  In
+the description of each temporal relationship below we refer toTask-A which contains and controls the relationship and Task-B the
+target of the relationship.</p>
+        <dl id="_c94ea540-2d80-4fa9-bef4-3bbb3d999e36">
+          <dt>
+            <p>RELTYPE=PARENT</p>
+          </dt>
+          <dd>
+<p id="_ac9e3fa3-6e75-4751-a06b-b1b880e837f5">See <a href="#RFC5545">RFC 5545, Section 3.2.15</a>.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=CHILD</p>
+          </dt>
+          <dd>
+<p id="_601c7509-e8d8-4da3-a736-7c146ffe3565">See <a href="#RFC5545">RFC 5545, Section 3.2.15</a>.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=SIBLING</p>
+          </dt>
+          <dd>
+<p id="_26e2d097-a649-42af-a497-feb4bd630713">See <a href="#RFC5545">RFC 5545, Section 3.2.15</a>.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=DEPENDS-ON</p>
+          </dt>
+          <dd>
+<p id="_438421af-89d6-40ae-8dec-71c424159b14">Indicates that the current calendar component
+depends on the referenced calendar component in some manner.  For
+example a task may be blocked waiting on the other, referenced,
+task.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=REFID</p>
+          </dt>
+          <dd>
+<p id="_d7432077-8e9b-40c6-983d-e51f1fe7c777">Establishes a reference from the current component to
+components with a REFID property which matches the value given in
+the associated RELATED-TO property.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=SERIES-MASTER</p>
+          </dt>
+          <dd>
+<p id="_7ec9e0da-a6ca-41fc-85b7-16428741aa01">Indicates that the current calendar component
+is based on the referenced calendar component.  The value is a UID.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=STRUCTURED-CATEGORY</p>
+          </dt>
+          <dd>
+<p id="_56de83be-6ef7-46f5-a0fd-1a70fba780a9">Establishes a reference from the
+current component to components with a STRUCTURED-CATEGORY
+property which matches the value given in the associated RELATED-
+TO property.</p>
+</dd>
+          <dt>
+            <p>RELTYPE=FINISHTOSTART</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_24cf478d-d257-487b-bce6-4a87ffe9e263">Task-B cannot start until Task-A finishes.
+For example, when sanding is complete, painting can begin.</p>
+        <div id="finishtostart" class="figure">
+
+<pre id="_f45e36a7-2261-49d3-a804-6ee3c5588f1f">            ============
+            |  Task-A  |--+
+            ============  |
+                          |
+                          V
+                          ============
+                          |  Task-B  |
+                          ============</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 2&#xA0;&#x2014; Finish to start relationship</p></div>
+        <dl id="_b3699051-8f1e-4e0a-8597-27632f235971">
+          <dt>
+            <p>RELTYPE=FINISHTOFINISH</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_e59d2871-9624-4e9e-83df-4941abeb0e2b">Task-B cannot finish before Task-A is
+   finished, that is the end of Task-A defines the end of Task-B.
+   For example, we start the potatoes, then the meat then the peas
+   but they should all be cooked at the same time.</p>
+        <div id="finishtofinish" class="figure">
+
+<pre id="_1368475a-91d1-475e-a35b-f1261ce8a0e5">                    ============
+                    |  Task-A  |--+
+                    ============  |
+                                  |
+                    ============  |
+                    |  Task-B  |&lt;-+
+                    ============</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 3&#xA0;&#x2014; Finish to finish relationship</p></div>
+        <dl id="_f7b65d0f-ada6-439d-bc90-e8ad716fc2c8">
+          <dt>
+            <p>RELTYPE=STARTTOFINISH</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_d781567c-355a-473a-9221-a1b39c791f01">The start of Task-A (which occurs after Task-B) controls the
+finish of Task-B.  For example, ticket sales
+(Task-B) end when the game starts (Task-A).</p>
+        <div id="starttofinish" class="figure">
+
+<pre id="_447366fe-3508-4bac-bdc2-a3bfa604cd54">                                     ============
+                                  +--|  Task-A  |
+                                  |  ============
+                                  |
+                    ============  |
+                    |  Task-B  |&lt;-+
+                    ============</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 4&#xA0;&#x2014; Start to finish relationship</p></div>
+        <dl id="_851bda5f-93e4-42df-9597-e054f9d2974d">
+          <dt>
+            <p>RELTYPE=STARTTOSTART</p>
+          </dt>
+          <dd></dd>
+        </dl>
+        <p id="_4b070962-d860-4636-98da-eb09f42b43ae">The start of Task-A triggers the start of
+Task-B, that is Task-B can start anytime after Task-A starts.</p>
+        <div id="starttostart" class="figure">
+
+<pre id="_6c3f22f4-53c6-472f-98ba-b1dcf1c4f985">                    ============
+                 +--|  Task-A  |
+                 |  ============
+                 |
+                 |  ============
+                 +-&gt;|  Task-B  |
+                    ============</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 5&#xA0;&#x2014; Start to start relationship</p></div>
+      </div>
+      <div id="_new_property_parameters">
+        <h1 id="toc14">7.&#xA0; New Property Parameters</h1>
+        <div id="param-split"><h2 id="toc15">7.1.&#xA0; Split</h2><dl id="_d05685f0-9804-4100-af96-b9ca57f0ef98"><dt><p>Parameter name</p></dt><dd>
+<p id="_7acde256-ce16-42a4-b737-57132b04018a">SPLIT</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_b336083b-4d22-458b-933a-85d3e2018692">To indicate a series has been split.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_657400c5-5b0b-4e38-a963-61388c9a329f">This parameter is defined by the following notation:</p>
+<pre id="_d783bea4-96b0-4840-92ae-330f20eef209" class="prettyprint ">splitparam&#xA0;&#xA0;&#xA0;&#xA0; = "SPLIT" "="<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ("YES"&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The series is split<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / "NO"&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The series is not split (default)<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / x-name&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; Experimental reference type<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; / iana-token)&#xA0;&#xA0; ; Other IANA registered type</pre><p class="SourceTitle" style="text-align:center;">Figure 6</p>
+
+<dl id="_52703d6e-2886-4c2a-a6e5-ab423ec62256"><dt><p>Description</p></dt><dd>
+<p id="_004b4906-45ca-47de-a05b-7c42639dccd8">This parameter MAY be specified on the SRULE property
+to indicate that the series has been split with SPLIT=YES.  Once
+split is is probably inappropriate to modify the series further.</p>
+</dd></dl></div>
+        <div id="param-lookahead-count"><h2 id="toc16">7.2.&#xA0; Lookahead count</h2><dl id="_7d525018-c4c2-42de-bffa-f026c859b62d"><dt><p>Parameter name</p></dt><dd>
+<p id="_6bdcf1e0-5532-4264-9013-a1eb573f1c36">LOOKAHEAD-COUNT</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_b22e9724-5820-4a50-8d52-6a8b97bb801e">To specify the number of series instances that should be
+generated in advance.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_1e66aee4-f27c-4f3b-af01-4749e5ee9ff2">This parameter is defined by the following notation:</p>
+<pre id="_ae40e5b2-d2ef-43e5-9942-0108680be2d7" class="prettyprint ">lookahead-countparam&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; = "LOOKAHEAD-COUNT" "=" 1*DIGIT</pre><p class="SourceTitle" style="text-align:center;">Figure 7</p>
+
+<dl id="_b5457d3d-5b33-4a74-9760-fe03200f8e1c"><dt><p>Description</p></dt><dd></dd></dl>
+<p id="_51aba419-9d22-41f9-ba7a-bce30dfaf0e0">This parameter MAY be specified on the SRULE property
+to indicate how many series instances should be generated in
+advance.</p>
+<p id="_8aa9c6fb-310e-4e82-a2dc-2620198ed51f">An implementation is free to apply its own limts but MUST NOT
+generate more than those defined by this parameter and/or the
+LOOKAHEAD-PERIOD parameter.</p>
+<p id="_050c985c-e6e3-4145-b9ec-bceda4818da9">If both the LOOKAHEAD-PERIOD and LOOKAHEAD-COUNT arameters are
+supplied the result should be limited by both.</p>
+<p id="_b6a19f6b-0c8f-4e81-850d-6b673bd64476">For example, if the LOOKAHEAD-PERIOD parameter would cause 8
+instances to be generated but LOOKAHEAD-COUNT specifies 4 then
+only 4 instances will be generated.</p></div>
+        <div id="param-lookahead-period"><h2 id="toc17">7.3.&#xA0; Lookahead period</h2><dl id="_06e759cf-88c9-4700-a136-eb886501ef13"><dt><p>Parameter name</p></dt><dd>
+<p id="_78efc1f1-517c-459a-8c19-a1a18ae0a434">LOOKAHEAD-PERIOD</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_2a7f7c56-ef3b-4310-b7c1-426db4af7ac1">To specify a maximum period for which series instances
+should be generated in advance.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_2f7150cf-71b2-4b8f-9eb7-ab8253952e8c">This parameter is defined by the following notation:</p>
+<pre id="_56453c88-398b-4468-957e-08cf46178ce0" class="prettyprint ">lookahead-periodparam&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; = "LOOKAHEAD-PERIOD" "="<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DQUOTE dur-value DQUOTE</pre><p class="SourceTitle" style="text-align:center;">Figure 8</p>
+
+<dl id="_17177094-618b-4aa3-9492-f3e0c77fc590"><dt><p>Description</p></dt><dd></dd></dl>
+<p id="_20da11fe-f3a9-4f9c-a34e-03212147d0cb">This parameter MAY be specified on the SRULE property
+to indicate how far in advance series instances should be
+generated.</p>
+<p id="_7f882f38-0fb7-423c-8b39-bc7fd652f275">An implementation is free to apply its own limts but MUST NOT
+generate more than those defined by this parameter and/or the
+LOOKAHEAD-COUNT parameter.</p>
+<p id="_ee4fbbe2-703c-407c-9678-f3b5eace981b">If both the LOOKAHEAD-PERIOD and LOOKAHEAD-COUNT arameters are
+supplied the result should be limited by both.</p>
+<p id="_3cf66625-5872-432c-ac08-5794f7a66068">For example, if the LOOKAHEAD-PERIOD parameter would cause 8
+instances to be generated but LOOKAHEAD-COUNT specifies 4 then
+only 4 instances will be generated.</p>
+<p id="_1df016e1-e5d6-4986-8189-1da450fd3778">The value is a quoted duration.</p></div>
+      </div>
+      <div id="new_properties">
+        <h1 id="toc18">8.&#xA0; New Properties</h1>
+        <div id="_general"><h2 id="toc19">8.1.&#xA0; General</h2><p id="_441b2191-73c7-4794-a371-3f5d39bb70c2">The SERIES-ID, LAST-SERIES-ID, SDATE and SXDATE properties are
+identical in form and in the parameters they take.</p>
+<p id="_ceda729f-b266-45a9-80aa-adbd39db0b04">All must conform in form to the DTSTART property of the master
+component.  Only the SDATE may specify a time which is not part of
+the calculated series.</p>
+<p id="_87330687-dab4-44f1-b22c-3bd90ae71f9d">The SRULE property value is identical in form to the RRULE property
+defined in <a href="#RFC5545">RFC 5545</a>.  The LOOKAHEAD-COUNT and LOOKAHEAD-PERIOD
+parameters indicate how many instances should be generated in
+advance.</p></div>
+        <div id="generating-series-members"><h2 id="toc20">8.2.&#xA0; Generating Series members</h2><p id="_43208a48-f74d-4671-882b-64fcef53cf34">An agent, either the server or a client, will periodically extend the
+set of instances.  The number of such generated instances is limited
+by:</p>
+<dl id="_ce57b4fe-d5de-4e5f-b8d3-068e0b3e953c"><dt><p>Elements of the rule</p></dt><dd>
+<p id="_e72edce5-7f2f-49a2-891f-824158b3aee6">The UNTIL or COUNT parts of the rule define
+when the series terminates.  Thus a COUNT=100 specifies a maximum
+of 100 series members.</p>
+</dd><dt><p>Lookahead count</p></dt><dd>
+<p id="_7e5e640f-5759-4a02-b4ea-74018a582a73">This specifies how many series members can exist
+from the current date/time.  Thus a LOOKAHEAD-COUNT=4 means a
+maximum of 4 generated instances.</p>
+</dd><dt><p>Lookahead period</p></dt><dd>
+<p id="_452ab6c6-2a89-4a8b-bcf4-e24b9276a62b">This specifies how far into the future series
+members can be generated.  Thus a LOOKAHEAD-PERIOD=&#x201D;PT2M&#x201D; means a
+maximum period of 2 months.</p>
+</dd><dt><p>System limits</p></dt><dd>
+<p id="_6fa248f2-5bcf-4154-896c-afbc11223fb2">This client or server SHOULD also apply limits to
+prevent a series from generating an overlarge set of members.</p>
+</dd></dl>
+<p id="_603c08a7-e127-42c0-8389-e315e3f340fe">The starting point for the calculation is the DTSTART of the master
+component or the LAST-SERIES-ID if it exists in the master.  In both
+cases the instance represented by that date is NOT generated as part
+of the instance set and the actual instance may have been excluded by
+an SXDATE property but the starting date is still valid.</p>
+<p id="_1fb3e800-8b12-44af-88c6-6561905dee7a">The starting date/time property defines the first instance in the
+next batch of series members.  Note that the starting property value
+MUST match the pattern of the series rule, if specified.  For
+example, if the rule specifies every Wednesday the starting date MUST
+be a Wednesday.</p>
+<p id="_bcfe08ed-c3ea-4e9e-a4bf-8c970a14dadc">The end date/time of the set will be provided by the UNTIL part of
+the rule, the LOOKAHEAD-PERIOD or by a system maxima.</p>
+<p id="_ad539d60-e6d8-4d93-b1b7-65b58fe55337">A set of date/time values can be generated within those contraints.
+As each date/time value is generated it can be ignored if it is one
+of the SXDATE values.</p>
+<p id="_316ce525-045a-4cb1-a6a7-9231c2dac0d7">Generation of values can terminate when the size of the result
+exceeds that given by the COUNT rule element, the LOOKAHEAD-COUNT
+value or any system limit.</p>
+<p id="_ed691aef-2d13-4327-bf58-d353eec95723">Any SDATE values that fall within the current range and are not in
+the set of SXDATE values can be added and the result truncated again
+to match the size limits.</p>
+<p id="_b796218e-6378-433e-a607-a9b8d56fa028">Finally, any date/time values that have already been generated and
+are present as SERIES-ID values should be removed from the set.  What
+remains is the new set of members to extend the current series.</p>
+<p id="_fdf80b42-7aa3-4c11-a435-6307a978667e">The last of those values becomes the new value for the LAST-SERIES-ID
+property in the series master.</p>
+<p id="_b8d83e0b-568b-48c7-8a15-20ec3fb51f78">As noted above the &#x201C;SXDATE&#x201D; property can be used to exclude the value
+specified in the master.  This leads to a complication as the master
+needs to be preserved as a container for the values which define the
+series.  This is flagged by adding a DELETED-MASTER element to the
+SERIES-STATUS property.</p></div>
+        <div id="prop-series-uid"><h2 id="toc21">8.3.&#xA0; Series UID</h2><dl id="_72eaa46d-57e2-48f4-9c60-46b410628f3a"><dt><p>Property name</p></dt><dd>
+<p id="_ac383bb7-acc6-4cd8-827f-19e137c4fd5b">SERIES-UID</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_46046843-6294-4db6-848e-9fb1cde4e42c">This property defines the persistent, globally unique
+identifier for the full series.</p>
+</dd><dt><p>Value Type</p></dt><dd>
+<p id="_6a651479-2639-4a7f-9eae-ee858359e643">TEXT</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_b93a02c7-3bf1-4501-a06c-8ad6da858411">IANA and non-standard property parameters can
+be specified on this property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_d0c88085-2e63-4056-8f51-002b4a75d352">This property MUST be specified in any &#x201C;VEVENT&#x201D;,
+&#x201C;VTODO&#x201D;, and &#x201C;VJOURNAL&#x201D; calendar components acting as a series
+master or series instance.</p>
+</dd><dt><p>Description</p></dt><dd>
+<p id="_742c7f31-f794-4ec4-9477-984ccb487354">The SERIES-UID MUST be globally unique.  This value
+SHOULD be generated by following the recommendations in
+<a href="#RFC7986">RFC 7986, Section 5.3</a>.</p>
+<dl id="_2c09b3a1-1046-4506-a318-b7f005b4a600"><dt><p>Format Definition</p></dt><dd></dd></dl>
+</dd></dl>
+<p id="_883c6655-956b-4296-bea2-019e27451f2a">This property is defined by the following notation:</p>
+<pre id="_c4df7ddf-d52b-4800-a527-56ee53ce1623" class="prettyprint ">seruid&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; = "SERIES-UID" seruidparam ":" text CRLF<br /><br />seruidparam&#xA0;&#xA0; = *(";" other-param)</pre><p class="SourceTitle" style="text-align:center;">Figure 9</p>
+
+<div id="_b60be628-3bb1-485c-b34a-afa58e4f3ecd" class="example"><p class="example-title">EXAMPLE</p><p id="_7b8e8c0b-ea31-4d09-8a21-9b62deb00fd2">The following is an example of this property:</p>
+<pre id="_31b92779-d93f-4609-b8bf-40f98e81e9ed" class="prettyprint ">SERIES-UID:123e4567-e89b-12d3-a456-426655440000</pre>
+</div></div>
+        <div id="prop-series-exception-date"><h2 id="toc22">8.4.&#xA0; Series-exception-date</h2><dl id="_28747f61-7341-4fc0-bdc5-b7d84778909c"><dt><p>Property name</p></dt><dd>
+<p id="_3617679f-65ee-48b2-a831-a3429ffa9923">SXDATE</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_613eb60f-3a72-41c3-acdf-dd3cc756910f">This property defines the list of DATE-TIME exceptions for
+series of events, to-dos or journal entries.</p>
+</dd><dt><p>Value Type</p></dt><dd>
+<p id="_bcdb9a7d-3133-43e8-b4fd-c8fe7a88c6b6">The default value type for this property is DATE-TIME.
+The value type can be set to DATE.</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_4e9e41a6-2a0a-4deb-9fe7-44c6d2093ef9">IANA, non-standard, value data type, and time
+zone identifier property parameters can be specified on this
+property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_2bc3cf11-6fd2-4c9c-ad32-0a48161e4299">This property can be specified in &#x201C;VEVENT&#x201D;, &#x201C;VTODO&#x201D;,
+and &#x201C;VJOURNAL&#x201D; calendar components acting as the series master.</p>
+</dd><dt><p>Description</p></dt><dd>
+<p id="_4a0e3996-5354-41c8-a473-8f20a4399f36">The exception dates, if specified, are used when
+computing the instances of the series.  They specify date/time
+values which are to be removed from the set of possible series
+instances.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_34932efe-ad11-440e-93f0-bd42e8a0f963">This property is defined by the following notation:</p>
+<pre id="_d8b684a6-b6bb-44bc-a302-32aa1ae42d9f" class="prettyprint ">sxdate&#xA0;&#xA0;&#xA0;&#xA0; = "SXDATE" sxdtparam ":" sxdtval *("," sxdtval) CRLF<br /><br />sxdtparam&#xA0; = *(<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following are OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" "VALUE" "=" ("DATE-TIME" / "DATE")) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" tzidparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following is OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" other-param)<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br /><br />sxdtval&#xA0;&#xA0;&#xA0; = date-time / date<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;Value MUST match value type</pre><p class="SourceTitle" style="text-align:center;">Figure 10</p>
+
+<div id="_2b9080ca-80f8-4ca2-9359-041114235336" class="example"><p class="example-title">EXAMPLE</p><p id="_5842f70c-e4d2-432c-9cbf-304bad3db695">The following is an example of this property:</p>
+<pre id="_c3c6ca95-7afd-4081-be74-2dbc458df85e" class="prettyprint ">SXDATE:19960402T010000Z,19960403T010000Z,19960404T010000Z</pre>
+</div></div>
+        <div id="prop-series-date"><h2 id="toc23">8.5.&#xA0; Series-date</h2><dl id="_6dc95b0b-e5fe-439c-b6cd-e04a10199962"><dt><p>Property name</p></dt><dd>
+<p id="_db6d94d9-1d59-4d8e-8c02-66ab3b1be082">SDATE</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_c427b664-cf48-472f-8759-9d63ed2ba2d8">This property defines the list of DATE-TIME values for
+series of events, to-dos or journal entries.</p>
+</dd><dt><p>Value Type</p></dt><dd>
+<p id="_945c9f5e-7cf3-4f0a-967c-7b18a5bc0c0a">The default value type for this property is DATE-TIME.
+The value type can be set to DATE.</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_57d43d60-dd27-4984-b966-614d9ff2e278">IANA, non-standard, value data type, and time
+zone identifier property parameters can be specified on this
+property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_04431bc7-50b4-4b6d-b88d-8eb13b4ae09b">This property can be specified in &#x201C;VEVENT&#x201D;, &#x201C;VTODO&#x201D;,
+and &#x201C;VJOURNAL&#x201D; calendar components acting as the series master.</p>
+</dd><dt><p>Description</p></dt><dd>
+<p id="_4c2834b6-7a4c-4dfd-b3f8-1f949074b6e7">This property can appear along with the &#x201C;SRULE&#x201D;
+property to define a extra series occurrences.  When they both
+appear in a series master component, the instances are defined by
+the union of occurrences defined by both the &#x201C;SDATE&#x201D; and &#x201C;SRULE&#x201D;.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_8fc2faf8-c0d1-4e76-8133-d1f6491ca470">This property is defined by the following notation:</p>
+<pre id="_5aea42a2-cb75-4962-88db-7f044e77684c" class="prettyprint "> sdate&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; = "SDATE" sdtparam ":" sdtval *("," sdtval) CRLF<br /><br />&#xA0;sdtparam&#xA0;&#xA0; = *(<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following are OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" "VALUE" "=" ("DATE-TIME" / "DATE" / "PERIOD")) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" tzidparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following is OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" other-param)<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br /><br />&#xA0;sdtval&#xA0;&#xA0;&#xA0;&#xA0; = date-time / date<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;Value MUST match value type</pre><p class="SourceTitle" style="text-align:center;">Figure 11</p>
+
+<div id="_a5e20be9-9c66-4a74-9fa3-ec7421f053cc" class="example"><p class="example-title">EXAMPLE</p><p id="_ecb31bad-2f00-4ccf-b558-c2fca717a450">The following are examples of this property:</p>
+<pre id="_2070e144-83bc-4dad-8ce3-d08eab08df39" class="prettyprint ">SDATE:19970714T123000Z<br />SDATE;TZID=America/New_York:19970714T083000<br /><br />SDATE;VALUE=PERIOD:19960403T020000Z/19960403T040000Z,<br />&#xA0;19960404T010000Z/PT3H<br /><br />SDATE;VALUE=DATE:19970101,19970120,19970217,19970421<br />&#xA0;19970526,19970704,19970901,19971014,19971128,19971129,19971225</pre>
+</div></div>
+        <div id="prop-series-id"><h2 id="toc24">8.6.&#xA0; Series-id</h2><dl id="_57ea87dd-1586-42fb-a671-e3ebef25df1b"><dt><p>Property name</p></dt><dd>
+<p id="_9bb0016e-d873-4418-aae2-8842ce610b18">SERIES-ID</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_059761b6-e026-4072-b34d-8f40bbe62554">This property is used in conjunction with the &#x201C;UID&#x201D; and
+&#x201C;SEQUENCE&#x201D; properties to identify a specific instance of a
+&#x201C;VEVENT&#x201D;, &#x201C;VTODO&#x201D;, or &#x201C;VJOURNAL&#x201D; calendar component in a series.
+The property value is the original value of the &#x201C;DTSTART&#x201D; property
+of the series instance before any changes occur.</p>
+</dd><dt><p>Value type</p></dt><dd>
+<p id="_f194c3ea-21c9-498f-b21b-ca9788821090">The default value type is DATE-TIME.  The value type can
+be set to a DATE value type.  This property MUST have the same
+value type as the &#x201C;DTSTART&#x201D; property contained within the series
+component.  Furthermore, this property MUST be specified as a date
+with local time if and only if the &#x201C;DTSTART&#x201D; property contained
+within the series component is specified as a date with local
+time.</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_157769b8-8167-4eb0-b576-73129f82e188">IANA, non-standard, value data type and time
+zone identifier parameters can be specified on this property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_d89d9460-c264-497d-b6c3-6505a9410ac0">This property can be specified zero or more times in
+any iCalendar component.</p>
+</dd><dt><p>Description</p></dt><dd></dd></dl>
+<p id="_6ae710dc-8b51-47d5-adee-a781b510cd04">The SERIES-ID is the originally calculated value of the
+  DTSTART property based on the master identified by the RELATED-TO
+  property with a RELTYPE=SERIES-MASTER parameter.</p>
+<div id="_2950974b-1114-4491-a46a-5f6ab73d41ee" class="figure">
+<pre id="_9dd2d70f-4ed2-41e7-ad7a-23b26c52b9e3">The full series of components can only be retrieved by searching
+for all components with a matching RELATED-TO property.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 12</p></div>
+<div id="_6ce7af96-7159-4cf3-bba0-7d3b8d81521f" class="figure">
+<pre id="_5ef812df-5966-4554-9a14-f64e41eabfe5">If the value of the "DTSTART" property is a DATE type value, then
+the value MUST be the calendar date for the series instance.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 13</p></div>
+<div id="_dc469279-c4a7-4a30-afef-3866751d6324" class="figure">
+<pre id="_8f4c4aa6-95fd-404f-880a-737f9f1dc090">The DATE-TIME value is set to the time when the original series
+instance would occur; meaning that if the intent is to change a
+Friday meeting to Thursday, the DATE-TIME is still set to the
+original Friday meeting.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 14</p></div>
+<div id="_2071523d-36bc-45fd-94c6-21b7e146c770" class="figure">
+<pre id="_cf7998f3-4933-44c7-b40f-0ac238887f2c">The "SERIES-ID" property is used in conjunction with the "UID" and
+"SEQUENCE" properties to identify a particular instance of an
+event, to-do, or journal in the series.  For a given pair of "UID"
+and "SEQUENCE" property values, the "SERIES-ID" value for a series
+instance is fixed.</pre>
+<p class="FigureTitle" style="text-align:center;">Figure 15</p></div>
+<dl id="_2063a53e-9ef9-44f7-a914-11846b65ab52"><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_96dbae9d-462c-4ae0-b737-1351e99ff939">This property is defined by the following notation:</p>
+<pre id="_971be382-1c10-43e8-b847-41aabfd788e4" class="prettyprint ">serid&#xA0;&#xA0;&#xA0; = "SERIES-ID" sidparam ":" sidval CRLF<br /><br />sidparam&#xA0;&#xA0; = *(<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following are OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" "VALUE" "=" ("DATE-TIME" / "DATE")) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" tzidparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following is OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" other-param)<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br /><br />sidval&#xA0;&#xA0;&#xA0;&#xA0; = date-time / date<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;Value MUST match value type</pre><p class="SourceTitle" style="text-align:center;">Figure 16</p>
+
+<div id="_bcf35e2d-c31c-4c58-907a-0577aba42658" class="example"><p class="example-title">EXAMPLE</p><p id="_f6599f52-985e-46da-b721-12912c90543f">The following are examples of this property:</p>
+<pre id="_04745ab9-faaf-4f27-a0fc-4e838e43c436" class="prettyprint ">SERIES-ID;VALUE=DATE:19960401<br /><br />SERIES-ID;TZID=America/New_York:20170120T120000</pre>
+</div></div>
+        <div id="prop-last-series-id"><h2 id="toc25">8.7.&#xA0; Last series ID</h2><dl id="_799d9c64-f9a1-4c55-a0b7-e705df29efe7"><dt><p>Property name</p></dt><dd>
+<p id="_9ec54f16-7625-4b57-afd8-4a42c660c73a">LAST-SERIES-ID</p>
+</dd><dt><p>Purpose</p></dt><dd></dd></dl>
+<p id="_486b5892-48e4-4de2-bd29-28cc9425cb13">To specify the last calculated instance of the series.
+When new instances are created they MUST have a SERIES-ID after
+the value of this property.</p>
+<p id="_7bcad08f-3bb5-4e43-a72f-1a1e1b649e8c">In all respects this property is identical to SERIES-ID and is in
+fact a copy of the SERIES-ID which would be present in the last
+created instance (assuming it is not suppressed by an SXDATE).</p>
+<dl id="_e3114f93-7b9f-4b93-a006-7ed2c54b5a5a"><dt><p>Value type</p></dt><dd>
+<p id="_efe933c4-9d94-4760-a070-51eff204b93f">DATE or DATE_TIME (the default).  This has the same
+requirements as SERIES-ID.</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_83920e95-e2b8-4cec-aaa6-967a01853466">IANA, non-standard, value data type and time
+zone identifier parameters can be specified on this property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_7e67f93e-c6fc-4f1d-88d9-65ef4ba51526">This property MAY be specified in any iCalendar
+component.</p>
+</dd><dt><p>Description</p></dt><dd>
+<p id="_5df5c3e3-8687-47ec-8b0f-96a4e9f725a1">When used in a component the value of this property
+points to additional information related to the component.  For
+example, it may reference the originating web server.</p>
+</dd><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_97370958-939f-420f-9004-2b832867f291">This property is defined by the following notation:</p>
+<pre id="_3f5e3576-a85f-4dda-960c-b462843b9c76" class="prettyprint ">last-series-i&#xA0;&#xA0; = "LAST-SERIES-ID" lastseriesidparam&#xA0; /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ";" "VALUE" "=" "TEXT"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ":" text<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ";" "VALUE" "=" "REFERENCE"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ":" text<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ";" "VALUE" "=" "URI"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ":" uri<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; CRLF<br /><br /><br />lastseriesidparam = *(<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; the following is MANDATORY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" relparam) /<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; the following are MANDATORY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" fmttypeparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" labelparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; labelparam is defined in ...<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; the following is OPTIONAL<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" xparam)<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )</pre><p class="SourceTitle" style="text-align:center;">Figure 17</p>
+
+<div id="_1bbc1ccc-ce27-4545-a972-008a2790d2da" class="example"><p class="example-title">EXAMPLE</p><p id="_9c3e4047-78cc-4354-8686-f0acea8d73e2">The following is an example of this property.  It points to a server
+acting as the source for the calendar object.</p>
+<pre id="_ca310983-eb61-4f84-a50a-d757db3e8d1c" class="prettyprint ">LINK;REL=SOURCE;LABEL=The Egg:http://example.com/events</pre>
+</div></div>
+        <div id="prop-series-rule"><h2 id="toc26">8.8.&#xA0; Series Rule</h2><dl id="_f38b6121-2b72-4ed7-ae7f-df2c37c272ae"><dt><p>Property name</p></dt><dd>
+<p id="_685c6f70-5ebc-4986-8d3e-df6b5cd690bf">RRULE</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_39bc7237-b64f-45fe-ab0b-866ba662fa5d">This property defines a rule or repeating pattern for a
+series of events, to-dos or journal entries.</p>
+</dd><dt><p>Value Type</p></dt><dd>
+<p id="_e0e8d9d4-25b0-4dbe-b91a-e5b4265e11cf">RECUR</p>
+</dd><dt><p>Property Parameters</p></dt><dd>
+<p id="_75e31b5c-3508-4f4c-9c12-06950760e687">IANA, non-standard, look-ahead count or date
+property parameters can be specified on this property.</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_c6371973-205f-4169-a4d2-fb2e4ea78e55">This property can be specified in any &#x201C;VEVENT&#x201D;,
+&#x201C;VTODO&#x201D;, and &#x201C;VJOURNAL&#x201D; calendar component, but it SHOULD NOT be
+specified more than once.</p>
+</dd><dt><p>Description</p></dt><dd></dd></dl>
+<p id="_f9385c44-5e51-4257-b55a-56b32760c70c">The series rule, if specified, is used in computing the
+instances to be generated for the series.  These are generated by
+considering the master &#x201C;DTSTART&#x201D; property along with the &#x201C;SRULE&#x201D;,
+&#x201C;SDATE&#x201D;, and &#x201C;SXDATE&#x201D; properties contained within the series
+master.  The &#x201C;DTSTART&#x201D; property defines the first instance in the
+recurrence set which is represented by that master event.</p>
+<p id="_3c6f35f9-d195-46c6-83b7-81dc671099d2">Unlike the RRULE the &#x201C;DTSTART&#x201D; property MUST be synchronized with
+the series rule, if specified.  For example, if the DTSTARTS
+species a date on Wednesday but the SRULE specifies every Tuesday
+then a server or client MUSt reject the component.</p>
+<p id="_6a3e7e23-5053-4792-964b-a5d6e654bc60">The final series is represented by gathering all of the start
+DATE-TIME values generated by any of the specified &#x201C;SRULE&#x201D; and
+&#x201C;SDATE&#x201D; properties, and then excluding any start DATE-TIME values
+specified by &#x201C;SXDATE&#x201D; properties.  This implies that start DATE-
+TIME values specified by &#x201C;SXDATE&#x201D; properties take precedence over
+those specified by inclusion properties (i.e., &#x201C;SDATE&#x201D; and
+&#x201C;SRULE&#x201D;).  Where duplicate instances are generated by the &#x201C;SRULE&#x201D;
+and &#x201C;SDATE&#x201D; properties, only one instance is considered.
+Duplicate instances are ignored.</p>
+<p id="_e1eb1b79-db7d-4260-9889-1a5e2f835cb9">The &#x201C;DTSTART&#x201D; property specified within the master iCalendar
+object defines the first instance of the recurrence.  In most
+cases, a &#x201C;DTSTART&#x201D; property of DATE-TIME value type used with a
+series rule, should be specified as a date with local time and
+time zone reference to make sure all the recurrence instances
+start at the same local time regardless of time zone changes.</p>
+<p id="_923662e2-7a53-4bda-88ff-42fff9d56197">If the duration of the series component is specified with the
+&#x201C;DTEND&#x201D; or &#x201C;DUE&#x201D; property, then the same exact duration will apply
+to all the members of the generated series.  Else, if the duration
+of the series master component is specified with the &#x201C;DURATION&#x201D;
+property, then the same nominal duration will apply to all the
+members of the generated series and the exact duration of each
+instance will depend on its specific start time.  For example,
+series instances of a nominal duration of one day will have an
+exact duration of more or less than 24 hours on a day where a time
+zone shift occurs.  The duration of a specific instance may be
+modified in an exception component or simply by using an &#x201C;SDATE&#x201D;
+property of PERIOD value type.</p>
+<dl id="_e76cd807-c417-4fa4-b6dc-25f1cf7c9af4"><dt><p>Format Definition</p></dt><dd></dd></dl>
+<p id="_5b978ab0-b17b-48be-9ea2-b407fa2eddb6">This property is defined by the following notation:</p>
+<pre id="_ba063fbe-13f6-49f2-a7aa-16d7f1ff5351" class="prettyprint ">srule&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; = "SRULE" srulparam ":" recur CRLF<br /><br />sruleparam = *(<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; the following are OPTIONAL<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" lookahead-countparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" lookahead-periodparam) /<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; the following is OPTIONAL<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" xparam)<br /><br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )</pre><p class="SourceTitle" style="text-align:center;">Figure 18</p>
+
+<div id="_6dec9e44-d09b-423b-876d-6361f8ceccc7" class="example"><p class="example-title">EXAMPLE</p>
+
+</div></div>
+      </div>
+      <div id="redefined_property_related_to">
+        <h1 id="toc27">9.&#xA0; Redefined RELATED-TO Property</h1>
+        <div id="related-to"><h2 id="toc28">9.1.&#xA0; RELATED-TO</h2><dl id="_522ee51e-8886-4c64-9909-6db838f87821"><dt><p>Property name</p></dt><dd>
+<p id="_a35c327e-488c-4a48-8411-38f39802657f">RELATED-TO</p>
+</dd><dt><p>Purpose</p></dt><dd>
+<p id="_23f3d6fb-9e4e-46e7-8dc9-cd847850161c">This property is used to represent a relationship or
+reference between one calendar component and another.  The
+definition here extends the definition in
+<a href="#RFC5545">RFC 5545, Section 3.8.4.5</a> by including a section on RELTYPE=SERIES-MASTER.</p>
+</dd><dt><p>Value type</p></dt><dd>
+<p id="_1d52a865-5abe-4988-9fd4-e19463be1f66">URI, UID or TEXT</p>
+</dd><dt><p>Conformance</p></dt><dd>
+<p id="_dc9c84f0-3f92-4f67-9aa5-784f945a180f">This property MAY be specified in any iCalendar
+component.</p>
+</dd><dt><p>Description</p></dt><dd><p id="_35147d65-dbfd-437c-b40b-c645c941a7eb">By default or when VALUE=UID is specified, the property
+value consists of the persistent, globally unique identifier of
+another calendar component.  This value would be represented in a
+calendar component by the &#x201C;UID&#x201D; property.</p><p id="_2cc065ba-dfd5-45ca-8cae-7f74f3ac21a9">By default, the property value points to another calendar
+   component that has a PARENT relationship to the referencing
+   object.  The &#x201C;RELTYPE&#x201D; property parameter is used to either
+   explicitly state the default PARENT relationship type to the
+   referenced calendar component or to override the default PARENT
+   relationship type and specify either a CHILD or SIBLING
+   relationship or a temporal relationship.</p>
+<p id="_249840bd-c2c7-4192-8ac8-320f6fe2f1db">The PARENT relationship indicates that the calendar component is a
+   subordinate of the referenced calendar component.  The CHILD
+   relationship indicates that the calendar component is a superior
+   of the referenced calendar component.  The SIBLING relationship
+   indicates that the calendar component is a peer of the referenced
+   calendar component.</p>
+<p id="_775176b9-fb81-47b2-9596-c71127d51c21">The FINISHTOSTART, FINISHTOFINISH, STARTTOFINISH or STARTTOSTART
+   relationships define temporal relationships as specified in the
+   reltype parameter definition.</p>
+<p id="_233e7ccf-25a9-4f83-bac5-ec6527ec2a46">The SERIES-MASTER relationship when included in a series instance
+  refers to the master of that series.  When included in a series
+  master it refers to a previous master in a chain of spilt series.</p>
+<p id="_c69b33d8-8ae7-4f94-b03f-1885fb4fa60a">Changes to a calendar component referenced by this property can
+   have an implicit impact on the related calendar component.  For
+   example, if a group event changes its start or end date or time,
+   then the related, dependent events will need to have their start
+   and end dates changed in a corresponding way.  Similarly, if a
+   PARENT calendar component is cancelled or deleted, then there is
+   an implied impact to the related CHILD calendar components.  This
+   property is intended only to provide information on the
+   relationship of calendar components.  It is up to the target
+   calendar system to maintain any property implications of this
+   relationship.</p></dd><dt><p>Format Definition</p></dt><dd><p id="_3fe6595e-8dd4-4594-b1c3-647af6574de0">This property is defined by the following notation:</p>
+<pre id="_75db61af-6f82-4d4c-9acd-4d33d84ec7dd" class="prettyprint ">related&#xA0;&#xA0;&#xA0; = "RELATED-TO" relparam ( ":" text ) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ";" "VALUE" "=" "UID"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ":" uid<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ";" "VALUE" "=" "URI"<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ":" uri<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; CRLF<br /><br />relparam&#xA0;&#xA0; = *(<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following are OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; but MUST NOT occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" reltypeparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" gapparam) /<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; The following is OPTIONAL,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ; and MAY occur more than once.<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; (";" other-param)<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; ;<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; )</pre><p class="SourceTitle" style="text-align:center;">Figure 19</p>
+</dd></dl>
+<div id="_e3182bd8-acf5-42eb-998f-f6b93bceeca2" class="example"><p class="example-title">EXAMPLE</p><p id="_d2aa9699-1adf-4572-95f6-0b02cdabaf6b">The following are examples of this property.</p>
+<pre id="_d5a2e6a3-629e-4354-98e6-eaede64a3c03" class="prettyprint ">RELATED-TO;RELTYPE=SERIES-MASTER:19960401-080045-4000F192713</pre>
+</div></div>
+      </div>
+      <div id="_backwards_compatibility">
+        <h1 id="toc29">10.&#xA0; Backwards compatibility</h1>
+        <p id="_c739e75c-5911-4b29-bb25-31892e35dfe3">Any clients following the approach specified in <a href="#RFC5545">RFC 5545</a> are
+expected to ignore any properties or parameters they don&#x2019;t recognize.</p>
+        <p id="_dd6e5e46-5871-417d-b429-96ff597a0419">For such clients the series appears to be an unconnected set of
+components.  They all have their own unique UIDS.  If the client
+updates an instance this should be identical in effect to an update
+carried out by a client aware of the new properties.</p>
+        <p id="_cbb6e190-47ee-4c62-9dbd-5372b3183a7c">Updates MUST preserve the SERIES-ID, LAST-SERIES-ID, SRULE, SDATE and
+SXDATE properties.  A client which does not do so is in violation of
+<a href="#RFC5545">RFC 5545</a>.</p>
+      </div>
+      <div id="_caldav_extensions">
+        <h1 id="toc30">11.&#xA0; CalDAV extensions</h1>
+        <p id="_39602376-9c96-4fae-a16d-66330ad6d213">This specification may extend Caldav by adding reports to return all
+members of a series given the series master UID.  This could be
+handled by the current query mechanism but it is likely to be
+sufficiently frequently used that a special query is appropriate.</p>
+        <p id="_0fc392f2-da04-47df-8c72-4e864f9537cb">It is also likely we will want a CalDAV operation to split a series
+and generate the additional members of the series as a single atomic
+operation.
+== Security Considerations</p>
+        <p id="_2ae80403-f139-4225-adb5-089102c5ff76">Clients and servers should take care to limit the number of generated
+instances to a reasonable value.  This can be a relatively small
+value.</p>
+      </div>
+      <div id="iana">
+        <h1 id="toc31">12.&#xA0; IANA Considerations</h1>
+        <div id="_icalendar_property_registrations"><h2 id="toc32">12.1.&#xA0; iCalendar Property Registrations</h2><p id="_b7de317a-0232-4b0b-aa8d-52b460907ceb">The following iCalendar property names have been added to the
+iCalendar Properties Registry defined in <a href="#RFC5545">RFC 5545, Section 8.3.2</a>.</p>
+<p class="TableTitle" style="text-align:center;">Table 1</p><table id="_f2eda5f3-cc49-4307-8969-d7b73b7498de" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Property</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Status</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Reference</th></tr></thead><tbody><tr><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_f75ea27f-7d67-461a-9fb1-c8ee66f8ecf6">LAST-SERIES-ID</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_239b01c8-45e1-465e-befe-d69150a39ca1">Current</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_29e0277f-8c43-42d8-bc4c-06ca11edf195">
+<a href="#prop-last-series-id">Clause 8.7</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_70962452-5fd8-46cd-b25b-3239d6b40622">SERIES-ID</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_2e60683a-d591-49d8-a788-31110c7cd539">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_82ac3c30-1956-43d6-8d93-c0ac1324349d">
+<a href="#prop-series-id">Clause 8.6</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_7c077d21-b468-48dc-8b69-806382b58948">SERIES-UID</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_c45e2c4d-e1dd-4fe8-97d3-e1aa44bfa96a">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_2e1bf2fe-1a2a-4f7a-813a-568edcf6130b">
+<a href="#prop-series-uid">Clause 8.3</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_201eab92-e0da-480b-96f2-493b62252e1f">SDATE</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_819b8378-e00d-4fc0-88b9-0c88d4ee96fa">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_666f0644-7abb-4793-b96d-70f062bcc3b2">
+<a href="#prop-series-date">Clause 8.5</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_b2da4657-be7d-440f-a3a1-3e4ff8cfcd7f">SRULE</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_8515f8ef-a113-49de-bda8-ca4ff523aa37">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_7faaaa0a-8cf3-489c-9d6f-1c11dc61b468">
+<a href="#prop-series-rule">Clause 8.8</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_33116fe4-60b0-4265-b921-e8849e07bc33">SXDATE</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_fc67d05b-4f55-4e16-b859-93ba5b947063">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_309d94c3-8229-4e66-becd-fdf8322ca35d">
+<a href="#prop-series-exception-date">Clause 8.4</a>
+</p>
+</td></tr></tbody></table></div>
+        <div id="_icalendar_property_parameter_registrations"><h2 id="toc33">12.2.&#xA0; iCalendar Property Parameter Registrations</h2><p id="_4c2f4a1b-8213-4c5a-9628-ec10961c6552">The following iCalendar property parameter names have been added to
+the iCalendar Parameters Registry defined in <a href="#RFC5545">RFC 5545, Section 8.3.3</a>.</p>
+<p class="TableTitle" style="text-align:center;">Table 2</p><table id="_6a4f4fd3-39b8-4192-a59c-8b1672a79bd4" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Parameter</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Status</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Reference</th></tr></thead><tbody><tr><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_52ac8959-ee03-4316-a949-5895e80c92c7">LOOKAHEAD-COUNT</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_7d225185-36ea-41d5-830d-a0ab2ef46190">Current</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">
+<p id="_5036996b-8258-42de-8e0c-e250a4c4df55">
+<a href="#param-lookahead-count">Clause 7.2</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_3c16c047-b0ee-4beb-b589-c1792127071e">LOOKAHEAD-PERIOD</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_d728e395-ab32-468a-92d9-41a02202efb2">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<p id="_1e57e553-6da9-41e7-a6c3-3e6aa1a30c35">
+<a href="#param-lookahead-period">Clause 7.3</a>
+</p>
+</td></tr><tr><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_36eeea7f-9b38-48cb-9097-53c72e511cf9">SPLIT</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_16d6bfc9-7840-436f-8b4a-cf375117be17">Current</p>
+</td><td style="text-align:left;border-top:none;border-bottom:solid windowtext 1.5pt;">
+<p id="_1eefcd27-ffd2-4dfa-85e8-556a1ea5a901">
+<a href="#param-split">Clause 7.1</a>
+</p>
+</td></tr></tbody></table></div>
+        <div id="_icalendar_reltype_value_registrations"><h2 id="toc34">12.3.&#xA0; iCalendar RELTYPE Value Registrations</h2><p id="_6ebd91cc-8a86-48df-b5d6-e07bcd01059c">The following iCalendar &#x201C;RELTYPE&#x201D; values have been added to the
+iCalendar Relationship Types Registry defined in <a href="#RFC5545">RFC 5545, Section 8.3.8</a>.</p>
+<p class="TableTitle" style="text-align:center;">Table 3</p><table id="_8146ab8d-0266-43d2-a078-1d24e39e5ce0" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Relationship Type</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Status</th><th style="font-weight:bold;text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Reference</th></tr></thead><tbody><tr><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">
+<p id="_0803aa26-1eac-4598-a592-56f82bf5b981">SERIES-ID</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">
+<p id="_1941771b-ec0c-42bb-82da-904149cd0942">Current</p>
+</td><td style="text-align:left;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">
+<p id="_a7f0064a-4ac4-437e-933a-8fe7e43572c2">
+<a href="#series">Clause 5</a>
+</p>
+</td></tr></tbody></table></div>
+      </div>
+      <br />
+      <div id="appendix-a" class="Section3">
+        <h1 class="Annex" id="toc35"><b>Appendix A</b><br />(informative) <br /><b>Points for discussion</b></h1>
+        <div id="_detecting_changes_from_old_clients"><h2 id="toc36">A.1.&#xA0; Detecting changes from old clients</h2><p id="_14bd13b9-c7b7-4787-a0b1-e64139c77380">If such a client updates
+properties in the master &#x2026;&#x200B; what do we say here?  Is there a way
+we can determine that the client doesn&#x2019;t realize that it&#x2019;s a
+series?  If it doesn&#x2019;t then updating the dtstart is a big deal -
+maybe we add a parameter to a dtstart update to indicate the
+client knows it&#x2019;s a series but wants to do so anyway.</p>
+<p id="_6f0df760-1eea-4d48-a523-751a564c4fd7">Or perhaps we add a new operation&#x2009;&#x2014;&#x2009;or extend patch.  Simple
+update returns FORBIDDEN if you try to change any of the important
+properties (should do that for recurrences) and requires an
+explicit flag to say you (think you) know what you&#x2019;re doing.</p></div>
+        <div id="_splitting_and_linking"><h2 id="toc37">A.2.&#xA0; Splitting and linking</h2><p id="_443d0852-aa82-4558-bf8c-ba4fdfafb441">The spec currently only allows for backward
+linking to previous masters.  There is a parameter added to the
+rule SPLIT=YES to indicate that the series was split</p>
+<p id="_c8eecc29-0380-45c9-9151-cd114b2dfe5c">It makes sense to have a forward link to the new(er) series.
+However, a client/server may not know what the UID is until after
+data is stored.  The new chain can be determined vis a query so
+perhaps we can leave it up to the protocols to figure out that
+mechanism.</p></div>
+        <div id="_caldav_queries"><h2 id="toc38">A.3.&#xA0; CalDAV queries</h2>
+
+<p id="_ee25a274-6612-4ca7-a820-cac12eb6e5f8">If there were a better more generalised query
+language such an extensions might be unnecessary.  Should we
+define a query language specifically for calendaring?</p>
+</div>
+      </div>
+      <br />
+      <div id="appendix-b" class="Section3">
+        <h1 class="Annex" id="toc39"><b>Appendix B</b><br />(informative) <br /><b>Change log</b></h1>
+        <p id="_037c23b7-05b0-4f82-866d-cd796e5f7bb6">2017-02-12 MD Initial version</p>
+      </div>
+      <br />
+      <div><h1 class="Section3" id="toc40">Bibliography</h1>
+
+</div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: { delimiters: [['(#(', ')#)']] }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML-full" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
+    $("#toc").on('click', 'li', function(e) {
+    $(this).parent().find('li.toc-active').removeClass('toc-active');
+    $(this).addClass('toc-active');
+});
+  </script>
+  
+  <script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+//
+// AnchorJS - v4.2.2 - 2020-04-20
+// https://www.bryanbraun.com/anchorjs/
+// Copyright (c) 2020 Bryan Braun; Licensed MIT
+//
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function f(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.base=A.hasOwnProperty("base")?A.base:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64,A.titleText=A.hasOwnProperty("titleText")?A.titleText:""}function p(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}this.options=A||{},this.elements=[],f(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var e,t,i,n,o,s,a,r,c,h,l,u,d=[];if(f(this.options),"touch"===(l=this.options.visible)&&(l=this.isTouchDevice()?"always":"hover"),0===(e=p(A=A||"h2, h3, h4, h5, h6")).length)return this;for(!function(){if(null!==document.head.querySelector("style.anchorjs"))return;var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"],style'))?document.head.appendChild(e):document.head.insertBefore(e,A);e.sheet.insertRule(".anchorjs-link{opacity:0;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}",e.sheet.cssRules.length),e.sheet.insertRule(":hover>.anchorjs-link,.anchorjs-link:focus{opacity:1}",e.sheet.cssRules.length),e.sheet.insertRule("[data-anchorjs-icon]::after{content:attr(data-anchorjs-icon)}",e.sheet.cssRules.length),e.sheet.insertRule('@font-face{font-family:anchorjs-icons;src:url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype")}',e.sheet.cssRules.length)}(),t=document.querySelectorAll("[id]"),i=[].map.call(t,function(A){return A.id}),o=0;o<e.length;o++)if(this.hasAnchorJSLink(e[o]))d.push(o);else{if(e[o].hasAttribute("id"))n=e[o].getAttribute("id");else if(e[o].hasAttribute("data-anchor-id"))n=e[o].getAttribute("data-anchor-id");else{for(c=r=this.urlify(e[o].textContent),a=0;void 0!==s&&(c=r+"-"+a),a+=1,-1!==(s=i.indexOf(c)););s=void 0,i.push(c),e[o].setAttribute("id",c),n=c}(h=document.createElement("a")).className="anchorjs-link "+this.options.class,h.setAttribute("aria-label",this.options.ariaLabel),h.setAttribute("data-anchorjs-icon",this.options.icon),this.options.titleText&&(h.title=this.options.titleText),u=document.querySelector("base")?window.location.pathname+window.location.search:"",u=this.options.base||u,h.href=u+"#"+n,"always"===l&&(h.style.opacity="1"),""===this.options.icon&&(h.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(h.style.lineHeight="inherit")),"left"===this.options.placement?(h.style.position="absolute",h.style.marginLeft="-1em",h.style.paddingRight="0.5em",e[o].insertBefore(h,e[o].firstChild)):(h.style.paddingLeft="0.375em",e[o].appendChild(h))}for(o=0;o<d.length;o++)e.splice(d[o]-o,1);return this.elements=this.elements.concat(e),this},this.remove=function(A){for(var e,t,i=p(A),n=0;n<i.length;n++)(t=i[n].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(i[n]))&&this.elements.splice(e,1),i[n].removeChild(t));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){return this.options.truncate||f(this.options),A.trim().replace(/\'/gi,"").replace(/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\\n\t\b\v]/g,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&-1<(" "+A.firstChild.className+" ").indexOf(" anchorjs-link "),t=A.lastChild&&-1<(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ");return e||t||!1}}});
+// @license-end
+  </script>
+  <script>
+/*
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+*/
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script>
+
+</body>
+</html>
