@@ -1,3 +1,5 @@
+# metanorma.release.yml — cc-icalendar-series
+
 documents:
-  - source: sources/cc-51003.adoc
-  - source: sources/draft-ietf-calext-icalendar-series.adoc
+  - pattern: "cc-*"
+    channels: [public/standards]
