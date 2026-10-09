@@ -23,6 +23,12 @@ include::sections/00-abstract.adoc[]
 
 include::sections/00-foreword.adoc[]
 
+[abstract]
+== Abstract
+
+This document updates RFC 5545 by defining a new repeating set of events known as a series. Unlike recurrences, each instance is a separate entity with a parent relationship to a specified template entity.
+
+
 include::sections/00-intro.adoc[]
 
 include::sections/01-scope.adoc[]
